@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="da83feda750e40b79777fe4073d44283" Name="Диаграмма1" ZoomLevel="77">
+        <EntityTypeShape EntityType="AudienceModel.AcademicRank" Width="1.5" PointX="8.25" PointY="45.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Appointment" Width="1.5" PointX="8.25" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.aspnet_Applications" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.aspnet_Membership" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.aspnet_Roles" Width="1.5" PointX="3" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.aspnet_SchemaVersions" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.aspnet_Users" Width="1.5" PointX="5.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Audience" Width="1.5" PointX="7.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Beauty" Width="1.5" PointX="5.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Building" Width="1.5" PointX="5.25" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Category" Width="1.5" PointX="5.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Degree" Width="1.5" PointX="8.25" PointY="50.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Discipline" Width="1.5" PointX="10.5" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Doc" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.DocType" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.EducationForm" Width="1.5" PointX="8.25" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.EducationKind" Width="1.5" PointX="10.5" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Equipment" Width="1.5" PointX="9.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.EquipmentType" Width="1.5" PointX="7.5" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Estate" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.ETime" Width="1.5" PointX="10.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.EventType" Width="1.5" PointX="8.25" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Faculty" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.File" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Groups" Width="1.5" PointX="8.25" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.LampType" Width="1.5" PointX="5.25" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Map" Width="1.5" PointX="5.25" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.News" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.ObjectType" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Profile" Width="1.5" PointX="7.5" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Repair" Width="1.5" PointX="9.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Responsible" Width="1.5" PointX="5.25" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Section" Width="1.5" PointX="8.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Sem" Width="1.5" PointX="8.25" PointY="37.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Shedule" Width="1.5" PointX="10.5" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.SheduleType" Width="1.5" PointX="8.25" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.State" Width="1.5" PointX="5.25" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Statistics" Width="1.5" PointX="10.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Stream" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Subdivision" Width="1.5" PointX="5.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Subdivision_old" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Subdivision_old_load" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.SubDivisionDiscipline" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.SubGroup" Width="1.5" PointX="10.5" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.TimeTable" Width="1.5" PointX="12.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Tutor" Width="1.5" PointX="10.5" PointY="47" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.Tutor_old" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudienceModel.WeekDay" Width="1.5" PointX="10.5" PointY="33.625" IsExpanded="true" />
+        <AssociationConnector Association="AudienceModel.FK_Tutor_new_AcademicRank" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Tutor_new_Appointment" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK__aspnet_Me__Appli__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK__aspnet_Ro__Appli__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK__aspnet_Us__Appli__0DAF0CB0" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK__aspnet_Me__UserI__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Profile_aspnet_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Statistics_aspnet_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Audience_LampType" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Audience_Map" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_AUDIENCE_REF_356_CATEGORY" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_AUDIENCE_REF_371_BUILDING" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_AUDIENCE_REF_377_STATE" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_AUDIENCE_REFERENCE_BEAUTY" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Audience_Responsible" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Audience_Subdivision" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_EQUIPMEN_REFERENCE_AUDIENCE" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_REPAIR_REFERENCE_AUDIENCE" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_TIMETABL_REFERENCE_AUDIENCE" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Tutor_new_Degree" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_SubDivisionDiscipline_Discipline" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_TIMETABL_DISCIPLINE" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Doc_Doc" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Doc_DocType" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Doc_File" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_SHEDULE_REFERENCE_EDUCATIO" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_TIMETABL_REFERENCE_EDUCATIO" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_EQUIPMEN_REFERENCE_EQUIPMEN" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Estate_Estate" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_TIMETABL_REFERENCE_ETIME" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Statistics_EventType" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Groups_Subdivision" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_SubGroup_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Statistics_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_SHEDULE_REFERENCE_SEM" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_SHEDULE_REFERENCE_SHEDULET" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_TIMETABL_REFERENCE_SHEDULE" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_Tutor_Subdivision" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_TIMETABL_REFERENCE_SUBGROUP" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_TIMETABL_REFERENCE_TUTOR" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.FK_TIMETABL_REFERENCE_WEEKDAY" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.aspnet_UsersInRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="AudienceModel.CategoryRole" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

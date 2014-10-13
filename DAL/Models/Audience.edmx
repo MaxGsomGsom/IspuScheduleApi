@@ -1,0 +1,3357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище AudienceModel" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Хранилище AudienceModelContainer">
+          <EntitySet Name="AcademicRank" EntityType="Хранилище AudienceModel.AcademicRank" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Appointment" EntityType="Хранилище AudienceModel.Appointment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Applications" EntityType="Хранилище AudienceModel.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Membership" EntityType="Хранилище AudienceModel.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Roles" EntityType="Хранилище AudienceModel.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="Хранилище AudienceModel.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Users" EntityType="Хранилище AudienceModel.aspnet_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_UsersInRoles" EntityType="Хранилище AudienceModel.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Audience" EntityType="Хранилище AudienceModel.Audience" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Beauty" EntityType="Хранилище AudienceModel.Beauty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Building" EntityType="Хранилище AudienceModel.Building" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Category" EntityType="Хранилище AudienceModel.Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoryRole" EntityType="Хранилище AudienceModel.CategoryRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Degree" EntityType="Хранилище AudienceModel.Degree" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Discipline" EntityType="Хранилище AudienceModel.Discipline" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Doc" EntityType="Хранилище AudienceModel.Doc" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DocType" EntityType="Хранилище AudienceModel.DocType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EducationForm" EntityType="Хранилище AudienceModel.EducationForm" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EducationKind" EntityType="Хранилище AudienceModel.EducationKind" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Equipment" EntityType="Хранилище AudienceModel.Equipment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EquipmentType" EntityType="Хранилище AudienceModel.EquipmentType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Estate" EntityType="Хранилище AudienceModel.Estate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ETime" EntityType="Хранилище AudienceModel.ETime" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EventType" EntityType="Хранилище AudienceModel.EventType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Faculty" EntityType="Хранилище AudienceModel.Faculty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="File" EntityType="Хранилище AudienceModel.File" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Groups" EntityType="Хранилище AudienceModel.Groups" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LampType" EntityType="Хранилище AudienceModel.LampType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Map" EntityType="Хранилище AudienceModel.Map" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="News" EntityType="Хранилище AudienceModel.News" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ObjectType" EntityType="Хранилище AudienceModel.ObjectType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Profile" EntityType="Хранилище AudienceModel.Profile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Repair" EntityType="Хранилище AudienceModel.Repair" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Responsible" EntityType="Хранилище AudienceModel.Responsible" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Section" EntityType="Хранилище AudienceModel.Section" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sem" EntityType="Хранилище AudienceModel.Sem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shedule" EntityType="Хранилище AudienceModel.Shedule" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SheduleType" EntityType="Хранилище AudienceModel.SheduleType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="State" EntityType="Хранилище AudienceModel.State" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Statistics" EntityType="Хранилище AudienceModel.Statistics" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Stream" EntityType="Хранилище AudienceModel.Stream" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subdivision" EntityType="Хранилище AudienceModel.Subdivision" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subdivision_old" EntityType="Хранилище AudienceModel.Subdivision_old" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subdivision_old_load" EntityType="Хранилище AudienceModel.Subdivision_old_load" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SubDivisionDiscipline" EntityType="Хранилище AudienceModel.SubDivisionDiscipline" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SubGroup" EntityType="Хранилище AudienceModel.SubGroup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="Хранилище AudienceModel.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TimeTable" EntityType="Хранилище AudienceModel.TimeTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tutor" EntityType="Хранилище AudienceModel.Tutor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tutor_old" EntityType="Хранилище AudienceModel.Tutor_old" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="WeekDay" EntityType="Хранилище AudienceModel.WeekDay" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__21B6055D" Association="Хранилище AudienceModel.FK__aspnet_Me__Appli__21B6055D">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__22AA2996" Association="Хранилище AudienceModel.FK__aspnet_Me__UserI__22AA2996">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__38996AB5" Association="Хранилище AudienceModel.FK__aspnet_Ro__Appli__38996AB5">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__0DAF0CB0" Association="Хранилище AudienceModel.FK__aspnet_Us__Appli__0DAF0CB0">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__RoleI__3F466844" Association="Хранилище AudienceModel.FK__aspnet_Us__RoleI__3F466844">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__3E52440B" Association="Хранилище AudienceModel.FK__aspnet_Us__UserI__3E52440B">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_LampType" Association="Хранилище AudienceModel.FK_Audience_LampType">
+            <End Role="LampType" EntitySet="LampType" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Map" Association="Хранилище AudienceModel.FK_Audience_Map">
+            <End Role="Map" EntitySet="Map" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_356_CATEGORY" Association="Хранилище AudienceModel.FK_AUDIENCE_REF_356_CATEGORY">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_371_BUILDING" Association="Хранилище AudienceModel.FK_AUDIENCE_REF_371_BUILDING">
+            <End Role="Building" EntitySet="Building" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_377_STATE" Association="Хранилище AudienceModel.FK_AUDIENCE_REF_377_STATE">
+            <End Role="State" EntitySet="State" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REFERENCE_BEAUTY" Association="Хранилище AudienceModel.FK_AUDIENCE_REFERENCE_BEAUTY">
+            <End Role="Beauty" EntitySet="Beauty" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Responsible" Association="Хранилище AudienceModel.FK_Audience_Responsible">
+            <End Role="Responsible" EntitySet="Responsible" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Subdivision" Association="Хранилище AudienceModel.FK_Audience_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryRole_aspnet_Roles" Association="Хранилище AudienceModel.FK_CategoryRole_aspnet_Roles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="CategoryRole" EntitySet="CategoryRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryRole_Category" Association="Хранилище AudienceModel.FK_CategoryRole_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="CategoryRole" EntitySet="CategoryRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_Doc" Association="Хранилище AudienceModel.FK_Doc_Doc">
+            <End Role="ObjectType" EntitySet="ObjectType" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_DocType" Association="Хранилище AudienceModel.FK_Doc_DocType">
+            <End Role="DocType" EntitySet="DocType" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_File" Association="Хранилище AudienceModel.FK_Doc_File">
+            <End Role="File" EntitySet="File" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPMEN_REFERENCE_AUDIENCE" Association="Хранилище AudienceModel.FK_EQUIPMEN_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="Equipment" EntitySet="Equipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPMEN_REFERENCE_EQUIPMEN" Association="Хранилище AudienceModel.FK_EQUIPMEN_REFERENCE_EQUIPMEN">
+            <End Role="EquipmentType" EntitySet="EquipmentType" />
+            <End Role="Equipment" EntitySet="Equipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Estate_Estate" Association="Хранилище AudienceModel.FK_Estate_Estate">
+            <End Role="Estate" EntitySet="Estate" />
+            <End Role="Estate1" EntitySet="Estate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Groups_Subdivision" Association="Хранилище AudienceModel.FK_Groups_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Groups" EntitySet="Groups" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_aspnet_Users" Association="Хранилище AudienceModel.FK_Profile_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="Profile" EntitySet="Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPAIR_REFERENCE_AUDIENCE" Association="Хранилище AudienceModel.FK_REPAIR_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="Repair" EntitySet="Repair" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_EDUCATIO" Association="Хранилище AudienceModel.FK_SHEDULE_REFERENCE_EDUCATIO">
+            <End Role="EducationForm" EntitySet="EducationForm" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_SEM" Association="Хранилище AudienceModel.FK_SHEDULE_REFERENCE_SEM">
+            <End Role="Sem" EntitySet="Sem" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_SHEDULET" Association="Хранилище AudienceModel.FK_SHEDULE_REFERENCE_SHEDULET">
+            <End Role="SheduleType" EntitySet="SheduleType" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_aspnet_Users" Association="Хранилище AudienceModel.FK_Statistics_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_EventType" Association="Хранилище AudienceModel.FK_Statistics_EventType">
+            <End Role="EventType" EntitySet="EventType" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_Section" Association="Хранилище AudienceModel.FK_Statistics_Section">
+            <End Role="Section" EntitySet="Section" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubDivisionDiscipline_Discipline" Association="Хранилище AudienceModel.FK_SubDivisionDiscipline_Discipline">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="SubDivisionDiscipline" EntitySet="SubDivisionDiscipline" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubGroup_Groups" Association="Хранилище AudienceModel.FK_SubGroup_Groups">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="SubGroup" EntitySet="SubGroup" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_DISCIPLINE" Association="Хранилище AudienceModel.FK_TIMETABL_DISCIPLINE">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_AUDIENCE" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_EDUCATIO" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_EDUCATIO">
+            <End Role="EducationKind" EntitySet="EducationKind" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_ETIME" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_ETIME">
+            <End Role="ETime" EntitySet="ETime" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_SHEDULE" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_SHEDULE">
+            <End Role="Shedule" EntitySet="Shedule" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_SUBGROUP" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_SUBGROUP">
+            <End Role="SubGroup" EntitySet="SubGroup" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_TUTOR" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_TUTOR">
+            <End Role="Tutor" EntitySet="Tutor" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_WEEKDAY" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_WEEKDAY">
+            <End Role="WeekDay" EntitySet="WeekDay" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_new_AcademicRank" Association="Хранилище AudienceModel.FK_Tutor_new_AcademicRank">
+            <End Role="AcademicRank" EntitySet="AcademicRank" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_new_Appointment" Association="Хранилище AudienceModel.FK_Tutor_new_Appointment">
+            <End Role="Appointment" EntitySet="Appointment" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_new_Degree" Association="Хранилище AudienceModel.FK_Tutor_new_Degree">
+            <End Role="Degree" EntitySet="Degree" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_Subdivision" Association="Хранилище AudienceModel.FK_Tutor_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AcademicRank">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="80" />
+          <Property Name="ShortTitle" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Appointment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordFormat" Type="int" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="ntext" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_UsersInRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Audience">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GraphId" Type="int" />
+          <Property Name="BuildingId" Type="int" />
+          <Property Name="Number" Type="varchar" MaxLength="10" />
+          <Property Name="CategoryId" Type="int" />
+          <Property Name="SubdivisionId" Type="int" />
+          <Property Name="ResponsibleId" Type="int" />
+          <Property Name="Area" Type="float" />
+          <Property Name="AreaTP" Type="float" />
+          <Property Name="NumTP" Type="varchar" MaxLength="50" />
+          <Property Name="Length" Type="float" />
+          <Property Name="Width" Type="float" />
+          <Property Name="Height" Type="float" />
+          <Property Name="CapacityPotential" Type="int" />
+          <Property Name="Capacity" Type="int" />
+          <Property Name="Commitment" Type="int" />
+          <Property Name="EquipmentCost" Type="int" />
+          <Property Name="Lock" Type="bit" Nullable="false" />
+          <Property Name="SignalSystem" Type="bit" Nullable="false" />
+          <Property Name="ControlDate" Type="datetime" />
+          <Property Name="StateId" Type="int" />
+          <Property Name="BeautyId" Type="int" />
+          <Property Name="WorkingClass" Type="varchar" MaxLength="50" />
+          <Property Name="WorkingClassDate" Type="datetime" />
+          <Property Name="LampCount" Type="int" />
+          <Property Name="LampBrokenCount" Type="int" />
+          <Property Name="LampTypeId" Type="int" />
+          <Property Name="Note" Type="varchar" MaxLength="500" />
+          <Property Name="RepairDate" Type="datetime" />
+          <Property Name="RepairLength" Type="int" />
+          <Property Name="RepairCost" Type="float" />
+          <Property Name="RepairNote" Type="varchar" MaxLength="1" />
+          <Property Name="WindowCount" Type="int" />
+          <Property Name="NoteState" Type="varchar" MaxLength="500" />
+          <Property Name="CapacityEmployee" Type="int" />
+          <Property Name="Floor" Type="int" />
+          <Property Name="LengthTP" Type="float" />
+          <Property Name="WidthTP" Type="float" />
+          <Property Name="HeightTP" Type="float" />
+          <Property Name="CapacityEmp" Type="int" />
+          <Property Name="MapId" Type="int" />
+          <Property Name="X" Type="real" />
+          <Property Name="Y" Type="real" />
+        </EntityType>
+        <EntityType Name="Beauty">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Building">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="Note" Type="varchar" MaxLength="500" />
+          <Property Name="Address" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+          <Property Name="ShortTitle" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="CategoryRole">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Degree">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="80" />
+          <Property Name="ShortTitle" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="Discipline">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="200" />
+          <Property Name="ShortName" Type="varchar" MaxLength="100" />
+          <Property Name="IVTF" Type="bit" />
+          <Property Name="IFF" Type="bit" />
+          <Property Name="TEF" Type="bit" />
+          <Property Name="FEY" Type="bit" />
+          <Property Name="EMF" Type="bit" />
+          <Property Name="EEF" Type="bit" />
+          <Property Name="FZVO" Type="bit" />
+        </EntityType>
+        <EntityType Name="Doc">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="DateDoc" Type="datetime" />
+          <Property Name="ObjectId" Type="int" />
+          <Property Name="ObjectTypeId" Type="int" />
+          <Property Name="FileId" Type="int" />
+          <Property Name="DocTypeId" Type="int" />
+        </EntityType>
+        <EntityType Name="DocType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="EducationForm">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="EducationKind">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+          <Property Name="ShortName" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Equipment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AudienceId" Type="int" Nullable="false" />
+          <Property Name="ElementId" Type="int" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Assessment" Type="int" />
+          <Property Name="Note" Type="varchar" MaxLength="500" />
+          <Property Name="Cost" Type="money" />
+        </EntityType>
+        <EntityType Name="EquipmentType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Estate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IsLot" Type="bit" Nullable="false" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="Litera" Type="varchar" MaxLength="100" />
+          <Property Name="Address" Type="varchar" MaxLength="250" />
+          <Property Name="FloorCount" Type="varchar" MaxLength="50" />
+          <Property Name="Area" Type="real" />
+          <Property Name="CadNum" Type="varchar" MaxLength="50" />
+          <Property Name="LotId" Type="int" />
+        </EntityType>
+        <EntityType Name="ETime">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="BegTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="Name" Type="char" MaxLength="13" />
+        </EntityType>
+        <EntityType Name="EventType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Faculty">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ShortTitle" Type="varchar" MaxLength="10" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="File">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Data" Type="varbinary(max)" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Format" Type="nvarchar" Nullable="false" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="Groups">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="10" />
+          <Property Name="SubDivisionId" Type="int" />
+        </EntityType>
+        <EntityType Name="LampType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Map">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="Path" Type="varchar" Nullable="false" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="varchar" Nullable="false" MaxLength="1000" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="ShortText" Type="varchar" Nullable="false" MaxLength="1000" />
+          <Property Name="Text" Type="varchar(max)" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ObjectType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+          <Property Name="Surname" Type="varchar" MaxLength="100" />
+          <Property Name="Patronimic" Type="varchar" MaxLength="100" />
+          <Property Name="FIO" Type="varchar" MaxLength="302" StoreGeneratedPattern="Computed" />
+          <Property Name="FI" Type="varchar" MaxLength="201" StoreGeneratedPattern="Computed" />
+          <Property Name="ICQ" Type="varchar" MaxLength="15" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="Fax" Type="varchar" MaxLength="50" />
+          <Property Name="Rank" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Repair">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AudienceId" Type="int" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="BeginDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Cost" Type="money" />
+        </EntityType>
+        <EntityType Name="Responsible">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Section">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Shedule">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LYear" Type="varchar" MaxLength="9" />
+          <Property Name="SemId" Type="int" />
+          <Property Name="EducationFormId" Type="int" />
+          <Property Name="SheduleTypeId" Type="int" />
+          <Property Name="BegDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="BegWeekDayId" Type="int" />
+          <Property Name="BegWeekNumber" Type="int" />
+          <Property Name="Note" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="SheduleType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="State">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Statistics">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EventTypeID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EventDate" Type="datetime" Nullable="false" />
+          <Property Name="SectionID" Type="int" Nullable="false" />
+          <Property Name="EventObjectID" Type="int" Nullable="false" />
+          <Property Name="UserIP" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Description" Type="nvarchar" />
+        </EntityType>
+        <EntityType Name="Stream">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Subdivision">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="250" />
+          <Property Name="ShortTitle" Type="varchar" MaxLength="50" />
+          <Property Name="ParentId" Type="varchar" MaxLength="50" />
+          <Property Name="FacultyId" Type="int" />
+          <Property Name="PFU" Type="varchar" MaxLength="5" />
+          <Property Name="Code" Type="varchar" MaxLength="20" />
+          <Property Name="Kind" Type="varbinary" MaxLength="5" />
+          <Property Name="Level" Type="varchar" MaxLength="10" />
+          <Property Name="Sector" Type="int" />
+          <Property Name="Director" Type="varbinary" MaxLength="100" />
+          <Property Name="Zarplata" Type="varbinary" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="Subdivision_old">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="ParentId" Type="varchar" MaxLength="4" />
+          <Property Name="Level" Type="varchar" MaxLength="10" />
+          <Property Name="Sector" Type="int" />
+          <Property Name="Title" Type="varchar" MaxLength="250" />
+          <Property Name="ShortTitle" Type="varchar" MaxLength="50" />
+          <Property Name="Director" Type="varchar" MaxLength="100" />
+          <Property Name="PFU" Type="varchar" MaxLength="5" />
+          <Property Name="Zarplata" Type="varchar" MaxLength="5" />
+          <Property Name="Code" Type="varchar" MaxLength="20" />
+          <Property Name="Kind" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="Subdivision_old_load">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="250" />
+          <Property Name="ShortTitle" Type="varchar" MaxLength="15" />
+          <Property Name="FacultyId" Type="int" />
+          <Property Name="IsLab" Type="bit" />
+          <Property Name="LastEditDate" Type="datetime" />
+          <Property Name="Prorector" Type="varchar" MaxLength="2" />
+          <Property Name="FundingSource" Type="varchar" MaxLength="4" />
+        </EntityType>
+        <EntityType Name="SubDivisionDiscipline">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="SubDivisionId" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="SubDivisionId" Type="int" Nullable="false" />
+          <Property Name="DisciplineId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SubGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="char" MaxLength="8" />
+          <Property Name="GroupId" Type="int" />
+          <Property Name="Course" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TimeTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SheduleId" Type="int" />
+          <Property Name="WeekNumber" Type="int" />
+          <Property Name="WeekDayId" Type="int" />
+          <Property Name="TemeId" Type="int" />
+          <Property Name="EducationKindId" Type="int" />
+          <Property Name="TutorId" Type="int" />
+          <Property Name="StreamId" Type="int" />
+          <Property Name="AudienceId" Type="int" />
+          <Property Name="Date" Type="varchar" MaxLength="50" />
+          <Property Name="DisciplineId" Type="int" />
+          <Property Name="AudiencePartNumber" Type="varchar" MaxLength="10" />
+          <Property Name="ScheduleId_" Type="int" />
+        </EntityType>
+        <EntityType Name="Tutor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="SubdivisionId" Type="int" />
+          <Property Name="RankId" Type="int" Nullable="false" />
+          <Property Name="DegreeId" Type="int" />
+          <Property Name="AppointmentId" Type="int" />
+        </EntityType>
+        <EntityType Name="Tutor_old">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="SubdivisionId" Type="int" />
+          <Property Name="Rank" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="WeekDay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="11" />
+          <Property Name="ShortName" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__21B6055D">
+          <End Role="aspnet_Applications" Type="Хранилище AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="Хранилище AudienceModel.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__22AA2996">
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="Хранилище AudienceModel.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__38996AB5">
+          <End Role="aspnet_Applications" Type="Хранилище AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="Хранилище AudienceModel.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__0DAF0CB0">
+          <End Role="aspnet_Applications" Type="Хранилище AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__RoleI__3F466844">
+          <End Role="aspnet_Roles" Type="Хранилище AudienceModel.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="Хранилище AudienceModel.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__UserI__3E52440B">
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="Хранилище AudienceModel.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Audience_LampType">
+          <End Role="LampType" Type="Хранилище AudienceModel.LampType" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LampType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="LampTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Audience_Map">
+          <End Role="Map" Type="Хранилище AudienceModel.Map" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Map">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="MapId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AUDIENCE_REF_356_CATEGORY">
+          <End Role="Category" Type="Хранилище AudienceModel.Category" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AUDIENCE_REF_371_BUILDING">
+          <End Role="Building" Type="Хранилище AudienceModel.Building" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Building">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="BuildingId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AUDIENCE_REF_377_STATE">
+          <End Role="State" Type="Хранилище AudienceModel.State" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AUDIENCE_REFERENCE_BEAUTY">
+          <End Role="Beauty" Type="Хранилище AudienceModel.Beauty" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Beauty">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="BeautyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Audience_Responsible">
+          <End Role="Responsible" Type="Хранилище AudienceModel.Responsible" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Responsible">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="ResponsibleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Audience_Subdivision">
+          <End Role="Subdivision" Type="Хранилище AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subdivision">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="SubdivisionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryRole_aspnet_Roles">
+          <End Role="aspnet_Roles" Type="Хранилище AudienceModel.aspnet_Roles" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CategoryRole" Type="Хранилище AudienceModel.CategoryRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="CategoryRole">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoryRole_Category">
+          <End Role="Category" Type="Хранилище AudienceModel.Category" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CategoryRole" Type="Хранилище AudienceModel.CategoryRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CategoryRole">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Doc_Doc">
+          <End Role="ObjectType" Type="Хранилище AudienceModel.ObjectType" Multiplicity="0..1" />
+          <End Role="Doc" Type="Хранилище AudienceModel.Doc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ObjectType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Doc">
+              <PropertyRef Name="ObjectTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Doc_DocType">
+          <End Role="DocType" Type="Хранилище AudienceModel.DocType" Multiplicity="0..1" />
+          <End Role="Doc" Type="Хранилище AudienceModel.Doc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DocType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Doc">
+              <PropertyRef Name="DocTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Doc_File">
+          <End Role="File" Type="Хранилище AudienceModel.File" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Doc" Type="Хранилище AudienceModel.Doc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="File">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Doc">
+              <PropertyRef Name="FileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPMEN_REFERENCE_AUDIENCE">
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="1" />
+          <End Role="Equipment" Type="Хранилище AudienceModel.Equipment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Audience">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Equipment">
+              <PropertyRef Name="AudienceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPMEN_REFERENCE_EQUIPMEN">
+          <End Role="EquipmentType" Type="Хранилище AudienceModel.EquipmentType" Multiplicity="0..1" />
+          <End Role="Equipment" Type="Хранилище AudienceModel.Equipment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EquipmentType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Equipment">
+              <PropertyRef Name="ElementId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Estate_Estate">
+          <End Role="Estate" Type="Хранилище AudienceModel.Estate" Multiplicity="0..1" />
+          <End Role="Estate1" Type="Хранилище AudienceModel.Estate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estate">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Estate1">
+              <PropertyRef Name="LotId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Groups_Subdivision">
+          <End Role="Subdivision" Type="Хранилище AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Groups" Type="Хранилище AudienceModel.Groups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subdivision">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Groups">
+              <PropertyRef Name="SubDivisionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_aspnet_Users">
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Profile" Type="Хранилище AudienceModel.Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPAIR_REFERENCE_AUDIENCE">
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="1" />
+          <End Role="Repair" Type="Хранилище AudienceModel.Repair" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Audience">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Repair">
+              <PropertyRef Name="AudienceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHEDULE_REFERENCE_EDUCATIO">
+          <End Role="EducationForm" Type="Хранилище AudienceModel.EducationForm" Multiplicity="0..1" />
+          <End Role="Shedule" Type="Хранилище AudienceModel.Shedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationForm">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Shedule">
+              <PropertyRef Name="EducationFormId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHEDULE_REFERENCE_SEM">
+          <End Role="Sem" Type="Хранилище AudienceModel.Sem" Multiplicity="0..1" />
+          <End Role="Shedule" Type="Хранилище AudienceModel.Shedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Shedule">
+              <PropertyRef Name="SemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHEDULE_REFERENCE_SHEDULET">
+          <End Role="SheduleType" Type="Хранилище AudienceModel.SheduleType" Multiplicity="0..1" />
+          <End Role="Shedule" Type="Хранилище AudienceModel.Shedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SheduleType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Shedule">
+              <PropertyRef Name="SheduleTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Statistics_aspnet_Users">
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Statistics" Type="Хранилище AudienceModel.Statistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Statistics">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Statistics_EventType">
+          <End Role="EventType" Type="Хранилище AudienceModel.EventType" Multiplicity="1" />
+          <End Role="Statistics" Type="Хранилище AudienceModel.Statistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Statistics">
+              <PropertyRef Name="EventTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Statistics_Section">
+          <End Role="Section" Type="Хранилище AudienceModel.Section" Multiplicity="1" />
+          <End Role="Statistics" Type="Хранилище AudienceModel.Statistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Section">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Statistics">
+              <PropertyRef Name="SectionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubDivisionDiscipline_Discipline">
+          <End Role="Discipline" Type="Хранилище AudienceModel.Discipline" Multiplicity="1" />
+          <End Role="SubDivisionDiscipline" Type="Хранилище AudienceModel.SubDivisionDiscipline" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SubDivisionDiscipline">
+              <PropertyRef Name="DisciplineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubGroup_Groups">
+          <End Role="Groups" Type="Хранилище AudienceModel.Groups" Multiplicity="0..1" />
+          <End Role="SubGroup" Type="Хранилище AudienceModel.SubGroup" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Groups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SubGroup">
+              <PropertyRef Name="GroupId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_DISCIPLINE">
+          <End Role="Discipline" Type="Хранилище AudienceModel.Discipline" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="DisciplineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_AUDIENCE">
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Audience">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="AudienceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_EDUCATIO">
+          <End Role="EducationKind" Type="Хранилище AudienceModel.EducationKind" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationKind">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="EducationKindId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_ETIME">
+          <End Role="ETime" Type="Хранилище AudienceModel.ETime" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ETime">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="TemeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_SHEDULE">
+          <End Role="Shedule" Type="Хранилище AudienceModel.Shedule" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Shedule">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="SheduleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_SUBGROUP">
+          <End Role="SubGroup" Type="Хранилище AudienceModel.SubGroup" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SubGroup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="StreamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_TUTOR">
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tutor">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="TutorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_WEEKDAY">
+          <End Role="WeekDay" Type="Хранилище AudienceModel.WeekDay" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WeekDay">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="WeekDayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tutor_new_AcademicRank">
+          <End Role="AcademicRank" Type="Хранилище AudienceModel.AcademicRank" Multiplicity="1" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AcademicRank">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tutor">
+              <PropertyRef Name="RankId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tutor_new_Appointment">
+          <End Role="Appointment" Type="Хранилище AudienceModel.Appointment" Multiplicity="0..1" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Appointment">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tutor">
+              <PropertyRef Name="AppointmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tutor_new_Degree">
+          <End Role="Degree" Type="Хранилище AudienceModel.Degree" Multiplicity="0..1" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Degree">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tutor">
+              <PropertyRef Name="DegreeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tutor_Subdivision">
+          <End Role="Subdivision" Type="Хранилище AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subdivision">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tutor">
+              <PropertyRef Name="SubdivisionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "Audience.dbo.Aud_Excel" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Aud_Excel">
+        <Property Name="Corpus" Type="char" MaxLength="10" />
+        <Property Name="Num" Type="nchar" MaxLength="10" />
+        <Property Name="Category" Type="nchar" MaxLength="40" />
+        <Property Name="Sotr" Type="int" />
+        <Property Name="Stud" Type="int" />
+        <Property Name="Comp" Type="int" />
+        <Property Name="K" Type="nchar" MaxLength="3" />
+        <Property Name="Sign" Type="nchar" MaxLength="3" />
+        <Property Name="PodrCode" Type="int" />
+        <Property Name="Note" Type="nchar" MaxLength="300" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AudienceModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AudienceEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="AcademicRank" EntityType="AudienceModel.AcademicRank" />
+          <EntitySet Name="Appointment" EntityType="AudienceModel.Appointment" />
+          <EntitySet Name="aspnet_Applications" EntityType="AudienceModel.aspnet_Applications" />
+          <EntitySet Name="aspnet_Membership" EntityType="AudienceModel.aspnet_Membership" />
+          <EntitySet Name="aspnet_Roles" EntityType="AudienceModel.aspnet_Roles" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="AudienceModel.aspnet_SchemaVersions" />
+          <EntitySet Name="aspnet_Users" EntityType="AudienceModel.aspnet_Users" />
+          <EntitySet Name="Audience" EntityType="AudienceModel.Audience" />
+          <EntitySet Name="Beauty" EntityType="AudienceModel.Beauty" />
+          <EntitySet Name="Building" EntityType="AudienceModel.Building" />
+          <EntitySet Name="Category" EntityType="AudienceModel.Category" />
+          <EntitySet Name="Degree" EntityType="AudienceModel.Degree" />
+          <EntitySet Name="Discipline" EntityType="AudienceModel.Discipline" />
+          <EntitySet Name="Doc" EntityType="AudienceModel.Doc" />
+          <EntitySet Name="DocType" EntityType="AudienceModel.DocType" />
+          <EntitySet Name="EducationForm" EntityType="AudienceModel.EducationForm" />
+          <EntitySet Name="EducationKind" EntityType="AudienceModel.EducationKind" />
+          <EntitySet Name="Equipment" EntityType="AudienceModel.Equipment" />
+          <EntitySet Name="EquipmentType" EntityType="AudienceModel.EquipmentType" />
+          <EntitySet Name="Estate" EntityType="AudienceModel.Estate" />
+          <EntitySet Name="ETime" EntityType="AudienceModel.ETime" />
+          <EntitySet Name="EventType" EntityType="AudienceModel.EventType" />
+          <EntitySet Name="Faculty" EntityType="AudienceModel.Faculty" />
+          <EntitySet Name="File" EntityType="AudienceModel.File" />
+          <EntitySet Name="Groups" EntityType="AudienceModel.Groups" />
+          <EntitySet Name="LampType" EntityType="AudienceModel.LampType" />
+          <EntitySet Name="Map" EntityType="AudienceModel.Map" />
+          <EntitySet Name="News" EntityType="AudienceModel.News" />
+          <EntitySet Name="ObjectType" EntityType="AudienceModel.ObjectType" />
+          <EntitySet Name="Profile" EntityType="AudienceModel.Profile" />
+          <EntitySet Name="Repair" EntityType="AudienceModel.Repair" />
+          <EntitySet Name="Responsible" EntityType="AudienceModel.Responsible" />
+          <EntitySet Name="Section" EntityType="AudienceModel.Section" />
+          <EntitySet Name="Sem" EntityType="AudienceModel.Sem" />
+          <EntitySet Name="Shedule" EntityType="AudienceModel.Shedule" />
+          <EntitySet Name="SheduleType" EntityType="AudienceModel.SheduleType" />
+          <EntitySet Name="State" EntityType="AudienceModel.State" />
+          <EntitySet Name="Statistics" EntityType="AudienceModel.Statistics" />
+          <EntitySet Name="Stream" EntityType="AudienceModel.Stream" />
+          <EntitySet Name="Subdivision" EntityType="AudienceModel.Subdivision" />
+          <EntitySet Name="Subdivision_old" EntityType="AudienceModel.Subdivision_old" />
+          <EntitySet Name="Subdivision_old_load" EntityType="AudienceModel.Subdivision_old_load" />
+          <EntitySet Name="SubDivisionDiscipline" EntityType="AudienceModel.SubDivisionDiscipline" />
+          <EntitySet Name="SubGroup" EntityType="AudienceModel.SubGroup" />
+          <EntitySet Name="sysdiagrams" EntityType="AudienceModel.sysdiagrams" />
+          <EntitySet Name="TimeTable" EntityType="AudienceModel.TimeTable" />
+          <EntitySet Name="Tutor" EntityType="AudienceModel.Tutor" />
+          <EntitySet Name="Tutor_old" EntityType="AudienceModel.Tutor_old" />
+          <EntitySet Name="WeekDay" EntityType="AudienceModel.WeekDay" />
+          <AssociationSet Name="FK_Tutor_new_AcademicRank" Association="AudienceModel.FK_Tutor_new_AcademicRank">
+            <End Role="AcademicRank" EntitySet="AcademicRank" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_new_Appointment" Association="AudienceModel.FK_Tutor_new_Appointment">
+            <End Role="Appointment" EntitySet="Appointment" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__Appli__21B6055D" Association="AudienceModel.FK__aspnet_Me__Appli__21B6055D">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__38996AB5" Association="AudienceModel.FK__aspnet_Ro__Appli__38996AB5">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__0DAF0CB0" Association="AudienceModel.FK__aspnet_Us__Appli__0DAF0CB0">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__22AA2996" Association="AudienceModel.FK__aspnet_Me__UserI__22AA2996">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_aspnet_Users" Association="AudienceModel.FK_Profile_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="Profile" EntitySet="Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_aspnet_Users" Association="AudienceModel.FK_Statistics_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_LampType" Association="AudienceModel.FK_Audience_LampType">
+            <End Role="LampType" EntitySet="LampType" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Map" Association="AudienceModel.FK_Audience_Map">
+            <End Role="Map" EntitySet="Map" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_356_CATEGORY" Association="AudienceModel.FK_AUDIENCE_REF_356_CATEGORY">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_371_BUILDING" Association="AudienceModel.FK_AUDIENCE_REF_371_BUILDING">
+            <End Role="Building" EntitySet="Building" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_377_STATE" Association="AudienceModel.FK_AUDIENCE_REF_377_STATE">
+            <End Role="State" EntitySet="State" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REFERENCE_BEAUTY" Association="AudienceModel.FK_AUDIENCE_REFERENCE_BEAUTY">
+            <End Role="Beauty" EntitySet="Beauty" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Responsible" Association="AudienceModel.FK_Audience_Responsible">
+            <End Role="Responsible" EntitySet="Responsible" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Subdivision" Association="AudienceModel.FK_Audience_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPMEN_REFERENCE_AUDIENCE" Association="AudienceModel.FK_EQUIPMEN_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="Equipment" EntitySet="Equipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPAIR_REFERENCE_AUDIENCE" Association="AudienceModel.FK_REPAIR_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="Repair" EntitySet="Repair" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_AUDIENCE" Association="AudienceModel.FK_TIMETABL_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_new_Degree" Association="AudienceModel.FK_Tutor_new_Degree">
+            <End Role="Degree" EntitySet="Degree" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubDivisionDiscipline_Discipline" Association="AudienceModel.FK_SubDivisionDiscipline_Discipline">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="SubDivisionDiscipline" EntitySet="SubDivisionDiscipline" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_DISCIPLINE" Association="AudienceModel.FK_TIMETABL_DISCIPLINE">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_Doc" Association="AudienceModel.FK_Doc_Doc">
+            <End Role="ObjectType" EntitySet="ObjectType" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_DocType" Association="AudienceModel.FK_Doc_DocType">
+            <End Role="DocType" EntitySet="DocType" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_File" Association="AudienceModel.FK_Doc_File">
+            <End Role="File" EntitySet="File" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_EDUCATIO" Association="AudienceModel.FK_SHEDULE_REFERENCE_EDUCATIO">
+            <End Role="EducationForm" EntitySet="EducationForm" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_EDUCATIO" Association="AudienceModel.FK_TIMETABL_REFERENCE_EDUCATIO">
+            <End Role="EducationKind" EntitySet="EducationKind" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPMEN_REFERENCE_EQUIPMEN" Association="AudienceModel.FK_EQUIPMEN_REFERENCE_EQUIPMEN">
+            <End Role="EquipmentType" EntitySet="EquipmentType" />
+            <End Role="Equipment" EntitySet="Equipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Estate_Estate" Association="AudienceModel.FK_Estate_Estate">
+            <End Role="Estate" EntitySet="Estate" />
+            <End Role="Estate1" EntitySet="Estate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_ETIME" Association="AudienceModel.FK_TIMETABL_REFERENCE_ETIME">
+            <End Role="ETime" EntitySet="ETime" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_EventType" Association="AudienceModel.FK_Statistics_EventType">
+            <End Role="EventType" EntitySet="EventType" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Groups_Subdivision" Association="AudienceModel.FK_Groups_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Groups" EntitySet="Groups" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubGroup_Groups" Association="AudienceModel.FK_SubGroup_Groups">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="SubGroup" EntitySet="SubGroup" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_Section" Association="AudienceModel.FK_Statistics_Section">
+            <End Role="Section" EntitySet="Section" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_SEM" Association="AudienceModel.FK_SHEDULE_REFERENCE_SEM">
+            <End Role="Sem" EntitySet="Sem" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_SHEDULET" Association="AudienceModel.FK_SHEDULE_REFERENCE_SHEDULET">
+            <End Role="SheduleType" EntitySet="SheduleType" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_SHEDULE" Association="AudienceModel.FK_TIMETABL_REFERENCE_SHEDULE">
+            <End Role="Shedule" EntitySet="Shedule" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_Subdivision" Association="AudienceModel.FK_Tutor_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_SUBGROUP" Association="AudienceModel.FK_TIMETABL_REFERENCE_SUBGROUP">
+            <End Role="SubGroup" EntitySet="SubGroup" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_TUTOR" Association="AudienceModel.FK_TIMETABL_REFERENCE_TUTOR">
+            <End Role="Tutor" EntitySet="Tutor" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_WEEKDAY" Association="AudienceModel.FK_TIMETABL_REFERENCE_WEEKDAY">
+            <End Role="WeekDay" EntitySet="WeekDay" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="aspnet_UsersInRoles" Association="AudienceModel.aspnet_UsersInRoles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="CategoryRole" Association="AudienceModel.CategoryRole">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="Category" EntitySet="Category" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AcademicRank">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="ShortTitle" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Tutor" Relationship="AudienceModel.FK_Tutor_new_AcademicRank" FromRole="AcademicRank" ToRole="Tutor" />
+        </EntityType>
+        <EntityType Name="Appointment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Tutor" Relationship="AudienceModel.FK_Tutor_new_Appointment" FromRole="Appointment" ToRole="Tutor" />
+        </EntityType>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="AudienceModel.FK__aspnet_Me__Appli__21B6055D" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="AudienceModel.FK__aspnet_Ro__Appli__38996AB5" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AudienceModel.FK__aspnet_Us__Appli__0DAF0CB0" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+          <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastLoginDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AudienceModel.FK__aspnet_Me__Appli__21B6055D" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AudienceModel.FK__aspnet_Me__UserI__22AA2996" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AudienceModel.FK__aspnet_Ro__Appli__38996AB5" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AudienceModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+          <NavigationProperty Name="Category" Relationship="AudienceModel.CategoryRole" FromRole="aspnet_Roles" ToRole="Category" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="AudienceModel.FK__aspnet_Us__Appli__0DAF0CB0" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="AudienceModel.FK__aspnet_Me__UserI__22AA2996" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="Profile" Relationship="AudienceModel.FK_Profile_aspnet_Users" FromRole="aspnet_Users" ToRole="Profile" />
+          <NavigationProperty Name="Statistics" Relationship="AudienceModel.FK_Statistics_aspnet_Users" FromRole="aspnet_Users" ToRole="Statistics" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="AudienceModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="Audience">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="GraphId" Type="Int32" />
+          <Property Name="BuildingId" Type="Int32" />
+          <Property Name="Number" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CategoryId" Type="Int32" />
+          <Property Name="SubdivisionId" Type="Int32" />
+          <Property Name="ResponsibleId" Type="Int32" />
+          <Property Name="Area" Type="Double" />
+          <Property Name="AreaTP" Type="Double" />
+          <Property Name="NumTP" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Length" Type="Double" />
+          <Property Name="Width" Type="Double" />
+          <Property Name="Height" Type="Double" />
+          <Property Name="CapacityPotential" Type="Int32" />
+          <Property Name="Capacity" Type="Int32" />
+          <Property Name="Commitment" Type="Int32" />
+          <Property Name="EquipmentCost" Type="Int32" />
+          <Property Name="Lock" Type="Boolean" Nullable="false" />
+          <Property Name="SignalSystem" Type="Boolean" Nullable="false" />
+          <Property Name="ControlDate" Type="DateTime" Precision="3" />
+          <Property Name="StateId" Type="Int32" />
+          <Property Name="BeautyId" Type="Int32" />
+          <Property Name="WorkingClass" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="WorkingClassDate" Type="DateTime" Precision="3" />
+          <Property Name="LampCount" Type="Int32" />
+          <Property Name="LampBrokenCount" Type="Int32" />
+          <Property Name="LampTypeId" Type="Int32" />
+          <Property Name="Note" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="RepairDate" Type="DateTime" Precision="3" />
+          <Property Name="RepairLength" Type="Int32" />
+          <Property Name="RepairCost" Type="Double" />
+          <Property Name="RepairNote" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="WindowCount" Type="Int32" />
+          <Property Name="NoteState" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="CapacityEmployee" Type="Int32" />
+          <Property Name="Floor" Type="Int32" />
+          <Property Name="LengthTP" Type="Double" />
+          <Property Name="WidthTP" Type="Double" />
+          <Property Name="HeightTP" Type="Double" />
+          <Property Name="CapacityEmp" Type="Int32" />
+          <Property Name="MapId" Type="Int32" />
+          <Property Name="X" Type="Single" />
+          <Property Name="Y" Type="Single" />
+          <NavigationProperty Name="LampType" Relationship="AudienceModel.FK_Audience_LampType" FromRole="Audience" ToRole="LampType" />
+          <NavigationProperty Name="Map" Relationship="AudienceModel.FK_Audience_Map" FromRole="Audience" ToRole="Map" />
+          <NavigationProperty Name="Category" Relationship="AudienceModel.FK_AUDIENCE_REF_356_CATEGORY" FromRole="Audience" ToRole="Category" />
+          <NavigationProperty Name="Building" Relationship="AudienceModel.FK_AUDIENCE_REF_371_BUILDING" FromRole="Audience" ToRole="Building" />
+          <NavigationProperty Name="State" Relationship="AudienceModel.FK_AUDIENCE_REF_377_STATE" FromRole="Audience" ToRole="State" />
+          <NavigationProperty Name="Beauty" Relationship="AudienceModel.FK_AUDIENCE_REFERENCE_BEAUTY" FromRole="Audience" ToRole="Beauty" />
+          <NavigationProperty Name="Responsible" Relationship="AudienceModel.FK_Audience_Responsible" FromRole="Audience" ToRole="Responsible" />
+          <NavigationProperty Name="Subdivision" Relationship="AudienceModel.FK_Audience_Subdivision" FromRole="Audience" ToRole="Subdivision" />
+          <NavigationProperty Name="Equipment" Relationship="AudienceModel.FK_EQUIPMEN_REFERENCE_AUDIENCE" FromRole="Audience" ToRole="Equipment" />
+          <NavigationProperty Name="Repair" Relationship="AudienceModel.FK_REPAIR_REFERENCE_AUDIENCE" FromRole="Audience" ToRole="Repair" />
+          <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_AUDIENCE" FromRole="Audience" ToRole="TimeTable" />
+        </EntityType>
+        <EntityType Name="Beauty">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_AUDIENCE_REFERENCE_BEAUTY" FromRole="Beauty" ToRole="Audience" />
+        </EntityType>
+        <EntityType Name="Building">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Note" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_AUDIENCE_REF_371_BUILDING" FromRole="Building" ToRole="Audience" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ShortTitle" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_AUDIENCE_REF_356_CATEGORY" FromRole="Category" ToRole="Audience" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="AudienceModel.CategoryRole" FromRole="Category" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="Degree">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="ShortTitle" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Tutor" Relationship="AudienceModel.FK_Tutor_new_Degree" FromRole="Degree" ToRole="Tutor" />
+        </EntityType>
+        <EntityType Name="Discipline">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="ShortName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IVTF" Type="Boolean" />
+          <Property Name="IFF" Type="Boolean" />
+          <Property Name="TEF" Type="Boolean" />
+          <Property Name="FEY" Type="Boolean" />
+          <Property Name="EMF" Type="Boolean" />
+          <Property Name="EEF" Type="Boolean" />
+          <Property Name="FZVO" Type="Boolean" />
+          <NavigationProperty Name="SubDivisionDiscipline" Relationship="AudienceModel.FK_SubDivisionDiscipline_Discipline" FromRole="Discipline" ToRole="SubDivisionDiscipline" />
+          <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_DISCIPLINE" FromRole="Discipline" ToRole="TimeTable" />
+        </EntityType>
+        <EntityType Name="Doc">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="DateDoc" Type="DateTime" Precision="3" />
+          <Property Name="ObjectId" Type="Int32" />
+          <Property Name="ObjectTypeId" Type="Int32" />
+          <Property Name="FileId" Type="Int32" />
+          <Property Name="DocTypeId" Type="Int32" />
+          <NavigationProperty Name="ObjectType" Relationship="AudienceModel.FK_Doc_Doc" FromRole="Doc" ToRole="ObjectType" />
+          <NavigationProperty Name="DocType" Relationship="AudienceModel.FK_Doc_DocType" FromRole="Doc" ToRole="DocType" />
+          <NavigationProperty Name="File" Relationship="AudienceModel.FK_Doc_File" FromRole="Doc" ToRole="File" />
+        </EntityType>
+        <EntityType Name="DocType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Doc" Relationship="AudienceModel.FK_Doc_DocType" FromRole="DocType" ToRole="Doc" />
+        </EntityType>
+        <EntityType Name="EducationForm">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Shedule" Relationship="AudienceModel.FK_SHEDULE_REFERENCE_EDUCATIO" FromRole="EducationForm" ToRole="Shedule" />
+        </EntityType>
+        <EntityType Name="EducationKind">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ShortName" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_EDUCATIO" FromRole="EducationKind" ToRole="TimeTable" />
+        </EntityType>
+        <EntityType Name="Equipment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="AudienceId" Type="Int32" Nullable="false" />
+          <Property Name="ElementId" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Assessment" Type="Int32" />
+          <Property Name="Note" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_EQUIPMEN_REFERENCE_AUDIENCE" FromRole="Equipment" ToRole="Audience" />
+          <NavigationProperty Name="EquipmentType" Relationship="AudienceModel.FK_EQUIPMEN_REFERENCE_EQUIPMEN" FromRole="Equipment" ToRole="EquipmentType" />
+        </EntityType>
+        <EntityType Name="EquipmentType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Equipment" Relationship="AudienceModel.FK_EQUIPMEN_REFERENCE_EQUIPMEN" FromRole="EquipmentType" ToRole="Equipment" />
+        </EntityType>
+        <EntityType Name="Estate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="IsLot" Type="Boolean" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Litera" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="FloorCount" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Area" Type="Single" />
+          <Property Name="CadNum" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LotId" Type="Int32" />
+          <NavigationProperty Name="Estate1" Relationship="AudienceModel.FK_Estate_Estate" FromRole="Estate" ToRole="Estate1" />
+          <NavigationProperty Name="Estate2" Relationship="AudienceModel.FK_Estate_Estate" FromRole="Estate1" ToRole="Estate" />
+        </EntityType>
+        <EntityType Name="ETime">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="BegTime" Type="DateTime" Precision="3" />
+          <Property Name="EndTime" Type="DateTime" Precision="3" />
+          <Property Name="Name" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_ETIME" FromRole="ETime" ToRole="TimeTable" />
+        </EntityType>
+        <EntityType Name="EventType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Statistics" Relationship="AudienceModel.FK_Statistics_EventType" FromRole="EventType" ToRole="Statistics" />
+        </EntityType>
+        <EntityType Name="Faculty">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ShortTitle" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="File">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Data" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Format" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Doc" Relationship="AudienceModel.FK_Doc_File" FromRole="File" ToRole="Doc" />
+        </EntityType>
+        <EntityType Name="Groups">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="SubDivisionId" Type="Int32" />
+          <NavigationProperty Name="Subdivision" Relationship="AudienceModel.FK_Groups_Subdivision" FromRole="Groups" ToRole="Subdivision" />
+          <NavigationProperty Name="SubGroup" Relationship="AudienceModel.FK_SubGroup_Groups" FromRole="Groups" ToRole="SubGroup" />
+        </EntityType>
+        <EntityType Name="LampType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_Audience_LampType" FromRole="LampType" ToRole="Audience" />
+        </EntityType>
+        <EntityType Name="Map">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_Audience_Map" FromRole="Map" ToRole="Audience" />
+        </EntityType>
+        <EntityType Name="News">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ShortText" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Text" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ObjectType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Doc" Relationship="AudienceModel.FK_Doc_Doc" FromRole="ObjectType" ToRole="Doc" />
+        </EntityType>
+        <EntityType Name="Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Surname" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Patronimic" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FIO" Type="String" MaxLength="302" Unicode="false" FixedLength="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="FI" Type="String" MaxLength="201" Unicode="false" FixedLength="false" p1:StoreGeneratedPattern="Computed" />
+          <Property Name="ICQ" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Fax" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Rank" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AudienceModel.FK_Profile_aspnet_Users" FromRole="Profile" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="Repair">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="AudienceId" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="BeginDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_REPAIR_REFERENCE_AUDIENCE" FromRole="Repair" ToRole="Audience" />
+        </EntityType>
+        <EntityType Name="Responsible">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_Audience_Responsible" FromRole="Responsible" ToRole="Audience" />
+        </EntityType>
+        <EntityType Name="Section">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Statistics" Relationship="AudienceModel.FK_Statistics_Section" FromRole="Section" ToRole="Statistics" />
+        </EntityType>
+        <EntityType Name="Sem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Shedule" Relationship="AudienceModel.FK_SHEDULE_REFERENCE_SEM" FromRole="Sem" ToRole="Shedule" />
+        </EntityType>
+        <EntityType Name="Shedule">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="LYear" Type="String" MaxLength="9" Unicode="false" FixedLength="false" />
+          <Property Name="SemId" Type="Int32" />
+          <Property Name="EducationFormId" Type="Int32" />
+          <Property Name="SheduleTypeId" Type="Int32" />
+          <Property Name="BegDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="BegWeekDayId" Type="Int32" />
+          <Property Name="BegWeekNumber" Type="Int32" />
+          <Property Name="Note" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="EducationForm" Relationship="AudienceModel.FK_SHEDULE_REFERENCE_EDUCATIO" FromRole="Shedule" ToRole="EducationForm" />
+          <NavigationProperty Name="Sem" Relationship="AudienceModel.FK_SHEDULE_REFERENCE_SEM" FromRole="Shedule" ToRole="Sem" />
+          <NavigationProperty Name="SheduleType" Relationship="AudienceModel.FK_SHEDULE_REFERENCE_SHEDULET" FromRole="Shedule" ToRole="SheduleType" />
+          <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_SHEDULE" FromRole="Shedule" ToRole="TimeTable" />
+        </EntityType>
+        <EntityType Name="SheduleType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Shedule" Relationship="AudienceModel.FK_SHEDULE_REFERENCE_SHEDULET" FromRole="SheduleType" ToRole="Shedule" />
+        </EntityType>
+        <EntityType Name="State">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_AUDIENCE_REF_377_STATE" FromRole="State" ToRole="Audience" />
+        </EntityType>
+        <EntityType Name="Statistics">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="EventTypeID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="EventDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SectionID" Type="Int32" Nullable="false" />
+          <Property Name="EventObjectID" Type="Int32" Nullable="false" />
+          <Property Name="UserIP" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Users" Relationship="AudienceModel.FK_Statistics_aspnet_Users" FromRole="Statistics" ToRole="aspnet_Users" />
+          <NavigationProperty Name="EventType" Relationship="AudienceModel.FK_Statistics_EventType" FromRole="Statistics" ToRole="EventType" />
+          <NavigationProperty Name="Section" Relationship="AudienceModel.FK_Statistics_Section" FromRole="Statistics" ToRole="Section" />
+        </EntityType>
+        <EntityType Name="Stream">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Subdivision">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="ShortTitle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ParentId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FacultyId" Type="Int32" />
+          <Property Name="PFU" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Code" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Kind" Type="Binary" MaxLength="5" FixedLength="false" />
+          <Property Name="Level" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Sector" Type="Int32" />
+          <Property Name="Director" Type="Binary" MaxLength="100" FixedLength="false" />
+          <Property Name="Zarplata" Type="Binary" MaxLength="5" FixedLength="false" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_Audience_Subdivision" FromRole="Subdivision" ToRole="Audience" />
+          <NavigationProperty Name="Groups" Relationship="AudienceModel.FK_Groups_Subdivision" FromRole="Subdivision" ToRole="Groups" />
+          <NavigationProperty Name="Tutor" Relationship="AudienceModel.FK_Tutor_Subdivision" FromRole="Subdivision" ToRole="Tutor" />
+        </EntityType>
+        <EntityType Name="Subdivision_old">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="ParentId" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="Level" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Sector" Type="Int32" />
+          <Property Name="Title" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="ShortTitle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Director" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="PFU" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Zarplata" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Code" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Kind" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Subdivision_old_load">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="ShortTitle" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="FacultyId" Type="Int32" />
+          <Property Name="IsLab" Type="Boolean" />
+          <Property Name="LastEditDate" Type="DateTime" Precision="3" />
+          <Property Name="Prorector" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="FundingSource" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SubDivisionDiscipline">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="SubDivisionId" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="SubDivisionId" Type="Int32" Nullable="false" />
+          <Property Name="DisciplineId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Discipline" Relationship="AudienceModel.FK_SubDivisionDiscipline_Discipline" FromRole="SubDivisionDiscipline" ToRole="Discipline" />
+        </EntityType>
+        <EntityType Name="SubGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+          <Property Name="GroupId" Type="Int32" />
+          <Property Name="Course" Type="Int32" />
+          <NavigationProperty Name="Groups" Relationship="AudienceModel.FK_SubGroup_Groups" FromRole="SubGroup" ToRole="Groups" />
+          <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_SUBGROUP" FromRole="SubGroup" ToRole="TimeTable" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TimeTable">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="SheduleId" Type="Int32" />
+          <Property Name="WeekNumber" Type="Int32" />
+          <Property Name="WeekDayId" Type="Int32" />
+          <Property Name="TemeId" Type="Int32" />
+          <Property Name="EducationKindId" Type="Int32" />
+          <Property Name="TutorId" Type="Int32" />
+          <Property Name="StreamId" Type="Int32" />
+          <Property Name="AudienceId" Type="Int32" />
+          <Property Name="Date" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DisciplineId" Type="Int32" />
+          <Property Name="AudiencePartNumber" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ScheduleId_" Type="Int32" />
+          <NavigationProperty Name="Audience" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_AUDIENCE" FromRole="TimeTable" ToRole="Audience" />
+          <NavigationProperty Name="Discipline" Relationship="AudienceModel.FK_TIMETABL_DISCIPLINE" FromRole="TimeTable" ToRole="Discipline" />
+          <NavigationProperty Name="EducationKind" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_EDUCATIO" FromRole="TimeTable" ToRole="EducationKind" />
+          <NavigationProperty Name="ETime" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_ETIME" FromRole="TimeTable" ToRole="ETime" />
+          <NavigationProperty Name="Shedule" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_SHEDULE" FromRole="TimeTable" ToRole="Shedule" />
+          <NavigationProperty Name="SubGroup" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_SUBGROUP" FromRole="TimeTable" ToRole="SubGroup" />
+          <NavigationProperty Name="Tutor" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_TUTOR" FromRole="TimeTable" ToRole="Tutor" />
+          <NavigationProperty Name="WeekDay" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_WEEKDAY" FromRole="TimeTable" ToRole="WeekDay" />
+        </EntityType>
+        <EntityType Name="Tutor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SubdivisionId" Type="Int32" />
+          <Property Name="RankId" Type="Int32" Nullable="false" />
+          <Property Name="DegreeId" Type="Int32" />
+          <Property Name="AppointmentId" Type="Int32" />
+          <NavigationProperty Name="AcademicRank" Relationship="AudienceModel.FK_Tutor_new_AcademicRank" FromRole="Tutor" ToRole="AcademicRank" />
+          <NavigationProperty Name="Appointment" Relationship="AudienceModel.FK_Tutor_new_Appointment" FromRole="Tutor" ToRole="Appointment" />
+          <NavigationProperty Name="Degree" Relationship="AudienceModel.FK_Tutor_new_Degree" FromRole="Tutor" ToRole="Degree" />
+          <NavigationProperty Name="Subdivision" Relationship="AudienceModel.FK_Tutor_Subdivision" FromRole="Tutor" ToRole="Subdivision" />
+          <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_TUTOR" FromRole="Tutor" ToRole="TimeTable" />
+        </EntityType>
+        <EntityType Name="Tutor_old">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SubdivisionId" Type="Int32" />
+          <Property Name="Rank" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="WeekDay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="ShortName" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_WEEKDAY" FromRole="WeekDay" ToRole="TimeTable" />
+        </EntityType>
+        <Association Name="FK_Tutor_new_AcademicRank">
+          <End Role="AcademicRank" Type="AudienceModel.AcademicRank" Multiplicity="1" />
+          <End Role="Tutor" Type="AudienceModel.Tutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AcademicRank">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tutor">
+              <PropertyRef Name="RankId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tutor_new_Appointment">
+          <End Role="Appointment" Type="AudienceModel.Appointment" Multiplicity="0..1" />
+          <End Role="Tutor" Type="AudienceModel.Tutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Appointment">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tutor">
+              <PropertyRef Name="AppointmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__Appli__21B6055D">
+          <End Role="aspnet_Applications" Type="AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AudienceModel.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__38996AB5">
+          <End Role="aspnet_Applications" Type="AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="AudienceModel.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__0DAF0CB0">
+          <End Role="aspnet_Applications" Type="AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="AudienceModel.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__22AA2996">
+          <End Role="aspnet_Users" Type="AudienceModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="AudienceModel.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_aspnet_Users">
+          <End Role="aspnet_Users" Type="AudienceModel.aspnet_Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Profile" Type="AudienceModel.Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Statistics_aspnet_Users">
+          <End Role="aspnet_Users" Type="AudienceModel.aspnet_Users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Statistics" Type="AudienceModel.Statistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Statistics">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Audience_LampType">
+          <End Role="LampType" Type="AudienceModel.LampType" Multiplicity="0..1" />
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LampType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="LampTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Audience_Map">
+          <End Role="Map" Type="AudienceModel.Map" Multiplicity="0..1" />
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Map">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="MapId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AUDIENCE_REF_356_CATEGORY">
+          <End Role="Category" Type="AudienceModel.Category" Multiplicity="0..1" />
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AUDIENCE_REF_371_BUILDING">
+          <End Role="Building" Type="AudienceModel.Building" Multiplicity="0..1" />
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Building">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="BuildingId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AUDIENCE_REF_377_STATE">
+          <End Role="State" Type="AudienceModel.State" Multiplicity="0..1" />
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AUDIENCE_REFERENCE_BEAUTY">
+          <End Role="Beauty" Type="AudienceModel.Beauty" Multiplicity="0..1" />
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Beauty">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="BeautyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Audience_Responsible">
+          <End Role="Responsible" Type="AudienceModel.Responsible" Multiplicity="0..1" />
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Responsible">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="ResponsibleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Audience_Subdivision">
+          <End Role="Subdivision" Type="AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subdivision">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Audience">
+              <PropertyRef Name="SubdivisionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPMEN_REFERENCE_AUDIENCE">
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="1" />
+          <End Role="Equipment" Type="AudienceModel.Equipment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Audience">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Equipment">
+              <PropertyRef Name="AudienceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPAIR_REFERENCE_AUDIENCE">
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="1" />
+          <End Role="Repair" Type="AudienceModel.Repair" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Audience">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Repair">
+              <PropertyRef Name="AudienceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_AUDIENCE">
+          <End Role="Audience" Type="AudienceModel.Audience" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Audience">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="AudienceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tutor_new_Degree">
+          <End Role="Degree" Type="AudienceModel.Degree" Multiplicity="0..1" />
+          <End Role="Tutor" Type="AudienceModel.Tutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Degree">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tutor">
+              <PropertyRef Name="DegreeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubDivisionDiscipline_Discipline">
+          <End Role="Discipline" Type="AudienceModel.Discipline" Multiplicity="1" />
+          <End Role="SubDivisionDiscipline" Type="AudienceModel.SubDivisionDiscipline" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SubDivisionDiscipline">
+              <PropertyRef Name="DisciplineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_DISCIPLINE">
+          <End Role="Discipline" Type="AudienceModel.Discipline" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="DisciplineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Doc_Doc">
+          <End Role="ObjectType" Type="AudienceModel.ObjectType" Multiplicity="0..1" />
+          <End Role="Doc" Type="AudienceModel.Doc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ObjectType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Doc">
+              <PropertyRef Name="ObjectTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Doc_DocType">
+          <End Role="DocType" Type="AudienceModel.DocType" Multiplicity="0..1" />
+          <End Role="Doc" Type="AudienceModel.Doc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DocType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Doc">
+              <PropertyRef Name="DocTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Doc_File">
+          <End Role="File" Type="AudienceModel.File" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Doc" Type="AudienceModel.Doc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="File">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Doc">
+              <PropertyRef Name="FileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHEDULE_REFERENCE_EDUCATIO">
+          <End Role="EducationForm" Type="AudienceModel.EducationForm" Multiplicity="0..1" />
+          <End Role="Shedule" Type="AudienceModel.Shedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationForm">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Shedule">
+              <PropertyRef Name="EducationFormId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_EDUCATIO">
+          <End Role="EducationKind" Type="AudienceModel.EducationKind" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EducationKind">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="EducationKindId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EQUIPMEN_REFERENCE_EQUIPMEN">
+          <End Role="EquipmentType" Type="AudienceModel.EquipmentType" Multiplicity="0..1" />
+          <End Role="Equipment" Type="AudienceModel.Equipment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EquipmentType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Equipment">
+              <PropertyRef Name="ElementId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Estate_Estate">
+          <End Role="Estate" Type="AudienceModel.Estate" Multiplicity="0..1" />
+          <End Role="Estate1" Type="AudienceModel.Estate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estate">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Estate1">
+              <PropertyRef Name="LotId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_ETIME">
+          <End Role="ETime" Type="AudienceModel.ETime" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ETime">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="TemeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Statistics_EventType">
+          <End Role="EventType" Type="AudienceModel.EventType" Multiplicity="1" />
+          <End Role="Statistics" Type="AudienceModel.Statistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Statistics">
+              <PropertyRef Name="EventTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Groups_Subdivision">
+          <End Role="Subdivision" Type="AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Groups" Type="AudienceModel.Groups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subdivision">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Groups">
+              <PropertyRef Name="SubDivisionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SubGroup_Groups">
+          <End Role="Groups" Type="AudienceModel.Groups" Multiplicity="0..1" />
+          <End Role="SubGroup" Type="AudienceModel.SubGroup" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Groups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SubGroup">
+              <PropertyRef Name="GroupId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Statistics_Section">
+          <End Role="Section" Type="AudienceModel.Section" Multiplicity="1" />
+          <End Role="Statistics" Type="AudienceModel.Statistics" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Section">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Statistics">
+              <PropertyRef Name="SectionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHEDULE_REFERENCE_SEM">
+          <End Role="Sem" Type="AudienceModel.Sem" Multiplicity="0..1" />
+          <End Role="Shedule" Type="AudienceModel.Shedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Shedule">
+              <PropertyRef Name="SemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SHEDULE_REFERENCE_SHEDULET">
+          <End Role="SheduleType" Type="AudienceModel.SheduleType" Multiplicity="0..1" />
+          <End Role="Shedule" Type="AudienceModel.Shedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SheduleType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Shedule">
+              <PropertyRef Name="SheduleTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_SHEDULE">
+          <End Role="Shedule" Type="AudienceModel.Shedule" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TimeTable" Type="AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Shedule">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="SheduleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tutor_Subdivision">
+          <End Role="Subdivision" Type="AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Tutor" Type="AudienceModel.Tutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subdivision">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Tutor">
+              <PropertyRef Name="SubdivisionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_SUBGROUP">
+          <End Role="SubGroup" Type="AudienceModel.SubGroup" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SubGroup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="StreamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_TUTOR">
+          <End Role="Tutor" Type="AudienceModel.Tutor" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tutor">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="TutorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TIMETABL_REFERENCE_WEEKDAY">
+          <End Role="WeekDay" Type="AudienceModel.WeekDay" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="AudienceModel.TimeTable" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WeekDay">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TimeTable">
+              <PropertyRef Name="WeekDayId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="aspnet_UsersInRoles">
+          <End Role="aspnet_Roles" Type="AudienceModel.aspnet_Roles" Multiplicity="*" />
+          <End Role="aspnet_Users" Type="AudienceModel.aspnet_Users" Multiplicity="*" />
+        </Association>
+        <Association Name="CategoryRole">
+          <End Role="aspnet_Roles" Type="AudienceModel.aspnet_Roles" Multiplicity="*" />
+          <End Role="Category" Type="AudienceModel.Category" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище AudienceModelContainer" CdmEntityContainer="AudienceEntities">
+          <EntitySetMapping Name="AcademicRank">
+            <EntityTypeMapping TypeName="AudienceModel.AcademicRank">
+              <MappingFragment StoreEntitySet="AcademicRank">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Appointment">
+            <EntityTypeMapping TypeName="AudienceModel.Appointment">
+              <MappingFragment StoreEntitySet="Appointment">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Applications">
+            <EntityTypeMapping TypeName="AudienceModel.aspnet_Applications">
+              <MappingFragment StoreEntitySet="aspnet_Applications">
+                <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+                <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Membership">
+            <EntityTypeMapping TypeName="AudienceModel.aspnet_Membership">
+              <MappingFragment StoreEntitySet="aspnet_Membership">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+                <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+                <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+                <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+                <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+                <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+                <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+                <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+                <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Roles">
+            <EntityTypeMapping TypeName="AudienceModel.aspnet_Roles">
+              <MappingFragment StoreEntitySet="aspnet_Roles">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_SchemaVersions">
+            <EntityTypeMapping TypeName="AudienceModel.aspnet_SchemaVersions">
+              <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+                <ScalarProperty Name="Feature" ColumnName="Feature" />
+                <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+                <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Users">
+            <EntityTypeMapping TypeName="AudienceModel.aspnet_Users">
+              <MappingFragment StoreEntitySet="aspnet_Users">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+                <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+                <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Audience">
+            <EntityTypeMapping TypeName="AudienceModel.Audience">
+              <MappingFragment StoreEntitySet="Audience">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="GraphId" ColumnName="GraphId" />
+                <ScalarProperty Name="BuildingId" ColumnName="BuildingId" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="SubdivisionId" ColumnName="SubdivisionId" />
+                <ScalarProperty Name="ResponsibleId" ColumnName="ResponsibleId" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="AreaTP" ColumnName="AreaTP" />
+                <ScalarProperty Name="NumTP" ColumnName="NumTP" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="CapacityPotential" ColumnName="CapacityPotential" />
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="Commitment" ColumnName="Commitment" />
+                <ScalarProperty Name="EquipmentCost" ColumnName="EquipmentCost" />
+                <ScalarProperty Name="Lock" ColumnName="Lock" />
+                <ScalarProperty Name="SignalSystem" ColumnName="SignalSystem" />
+                <ScalarProperty Name="ControlDate" ColumnName="ControlDate" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+                <ScalarProperty Name="BeautyId" ColumnName="BeautyId" />
+                <ScalarProperty Name="WorkingClass" ColumnName="WorkingClass" />
+                <ScalarProperty Name="WorkingClassDate" ColumnName="WorkingClassDate" />
+                <ScalarProperty Name="LampCount" ColumnName="LampCount" />
+                <ScalarProperty Name="LampBrokenCount" ColumnName="LampBrokenCount" />
+                <ScalarProperty Name="LampTypeId" ColumnName="LampTypeId" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="RepairDate" ColumnName="RepairDate" />
+                <ScalarProperty Name="RepairLength" ColumnName="RepairLength" />
+                <ScalarProperty Name="RepairCost" ColumnName="RepairCost" />
+                <ScalarProperty Name="RepairNote" ColumnName="RepairNote" />
+                <ScalarProperty Name="WindowCount" ColumnName="WindowCount" />
+                <ScalarProperty Name="NoteState" ColumnName="NoteState" />
+                <ScalarProperty Name="CapacityEmployee" ColumnName="CapacityEmployee" />
+                <ScalarProperty Name="Floor" ColumnName="Floor" />
+                <ScalarProperty Name="LengthTP" ColumnName="LengthTP" />
+                <ScalarProperty Name="WidthTP" ColumnName="WidthTP" />
+                <ScalarProperty Name="HeightTP" ColumnName="HeightTP" />
+                <ScalarProperty Name="CapacityEmp" ColumnName="CapacityEmp" />
+                <ScalarProperty Name="MapId" ColumnName="MapId" />
+                <ScalarProperty Name="X" ColumnName="X" />
+                <ScalarProperty Name="Y" ColumnName="Y" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Beauty">
+            <EntityTypeMapping TypeName="AudienceModel.Beauty">
+              <MappingFragment StoreEntitySet="Beauty">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Building">
+            <EntityTypeMapping TypeName="AudienceModel.Building">
+              <MappingFragment StoreEntitySet="Building">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Category">
+            <EntityTypeMapping TypeName="AudienceModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Degree">
+            <EntityTypeMapping TypeName="AudienceModel.Degree">
+              <MappingFragment StoreEntitySet="Degree">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Discipline">
+            <EntityTypeMapping TypeName="AudienceModel.Discipline">
+              <MappingFragment StoreEntitySet="Discipline">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+                <ScalarProperty Name="IVTF" ColumnName="IVTF" />
+                <ScalarProperty Name="IFF" ColumnName="IFF" />
+                <ScalarProperty Name="TEF" ColumnName="TEF" />
+                <ScalarProperty Name="FEY" ColumnName="FEY" />
+                <ScalarProperty Name="EMF" ColumnName="EMF" />
+                <ScalarProperty Name="EEF" ColumnName="EEF" />
+                <ScalarProperty Name="FZVO" ColumnName="FZVO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Doc">
+            <EntityTypeMapping TypeName="AudienceModel.Doc">
+              <MappingFragment StoreEntitySet="Doc">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="DateDoc" ColumnName="DateDoc" />
+                <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+                <ScalarProperty Name="ObjectTypeId" ColumnName="ObjectTypeId" />
+                <ScalarProperty Name="FileId" ColumnName="FileId" />
+                <ScalarProperty Name="DocTypeId" ColumnName="DocTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DocType">
+            <EntityTypeMapping TypeName="AudienceModel.DocType">
+              <MappingFragment StoreEntitySet="DocType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EducationForm">
+            <EntityTypeMapping TypeName="AudienceModel.EducationForm">
+              <MappingFragment StoreEntitySet="EducationForm">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EducationKind">
+            <EntityTypeMapping TypeName="AudienceModel.EducationKind">
+              <MappingFragment StoreEntitySet="EducationKind">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Equipment">
+            <EntityTypeMapping TypeName="AudienceModel.Equipment">
+              <MappingFragment StoreEntitySet="Equipment">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AudienceId" ColumnName="AudienceId" />
+                <ScalarProperty Name="ElementId" ColumnName="ElementId" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Assessment" ColumnName="Assessment" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EquipmentType">
+            <EntityTypeMapping TypeName="AudienceModel.EquipmentType">
+              <MappingFragment StoreEntitySet="EquipmentType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Estate">
+            <EntityTypeMapping TypeName="AudienceModel.Estate">
+              <MappingFragment StoreEntitySet="Estate">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IsLot" ColumnName="IsLot" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Litera" ColumnName="Litera" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="FloorCount" ColumnName="FloorCount" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="CadNum" ColumnName="CadNum" />
+                <ScalarProperty Name="LotId" ColumnName="LotId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ETime">
+            <EntityTypeMapping TypeName="AudienceModel.ETime">
+              <MappingFragment StoreEntitySet="ETime">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BegTime" ColumnName="BegTime" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EventType">
+            <EntityTypeMapping TypeName="AudienceModel.EventType">
+              <MappingFragment StoreEntitySet="EventType">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Faculty">
+            <EntityTypeMapping TypeName="AudienceModel.Faculty">
+              <MappingFragment StoreEntitySet="Faculty">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="File">
+            <EntityTypeMapping TypeName="AudienceModel.File">
+              <MappingFragment StoreEntitySet="File">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Format" ColumnName="Format" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Groups">
+            <EntityTypeMapping TypeName="AudienceModel.Groups">
+              <MappingFragment StoreEntitySet="Groups">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SubDivisionId" ColumnName="SubDivisionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LampType">
+            <EntityTypeMapping TypeName="AudienceModel.LampType">
+              <MappingFragment StoreEntitySet="LampType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Map">
+            <EntityTypeMapping TypeName="AudienceModel.Map">
+              <MappingFragment StoreEntitySet="Map">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News">
+            <EntityTypeMapping TypeName="AudienceModel.News">
+              <MappingFragment StoreEntitySet="News">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="ShortText" ColumnName="ShortText" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ObjectType">
+            <EntityTypeMapping TypeName="AudienceModel.ObjectType">
+              <MappingFragment StoreEntitySet="ObjectType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Profile">
+            <EntityTypeMapping TypeName="AudienceModel.Profile">
+              <MappingFragment StoreEntitySet="Profile">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="Patronimic" ColumnName="Patronimic" />
+                <ScalarProperty Name="FIO" ColumnName="FIO" />
+                <ScalarProperty Name="FI" ColumnName="FI" />
+                <ScalarProperty Name="ICQ" ColumnName="ICQ" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Repair">
+            <EntityTypeMapping TypeName="AudienceModel.Repair">
+              <MappingFragment StoreEntitySet="Repair">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AudienceId" ColumnName="AudienceId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Responsible">
+            <EntityTypeMapping TypeName="AudienceModel.Responsible">
+              <MappingFragment StoreEntitySet="Responsible">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Section">
+            <EntityTypeMapping TypeName="AudienceModel.Section">
+              <MappingFragment StoreEntitySet="Section">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sem">
+            <EntityTypeMapping TypeName="AudienceModel.Sem">
+              <MappingFragment StoreEntitySet="Sem">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shedule">
+            <EntityTypeMapping TypeName="AudienceModel.Shedule">
+              <MappingFragment StoreEntitySet="Shedule">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="LYear" ColumnName="LYear" />
+                <ScalarProperty Name="SemId" ColumnName="SemId" />
+                <ScalarProperty Name="EducationFormId" ColumnName="EducationFormId" />
+                <ScalarProperty Name="SheduleTypeId" ColumnName="SheduleTypeId" />
+                <ScalarProperty Name="BegDate" ColumnName="BegDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="BegWeekDayId" ColumnName="BegWeekDayId" />
+                <ScalarProperty Name="BegWeekNumber" ColumnName="BegWeekNumber" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SheduleType">
+            <EntityTypeMapping TypeName="AudienceModel.SheduleType">
+              <MappingFragment StoreEntitySet="SheduleType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="State">
+            <EntityTypeMapping TypeName="AudienceModel.State">
+              <MappingFragment StoreEntitySet="State">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Statistics">
+            <EntityTypeMapping TypeName="AudienceModel.Statistics">
+              <MappingFragment StoreEntitySet="Statistics">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="EventTypeID" ColumnName="EventTypeID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+                <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+                <ScalarProperty Name="EventObjectID" ColumnName="EventObjectID" />
+                <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stream">
+            <EntityTypeMapping TypeName="AudienceModel.Stream">
+              <MappingFragment StoreEntitySet="Stream">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subdivision">
+            <EntityTypeMapping TypeName="AudienceModel.Subdivision">
+              <MappingFragment StoreEntitySet="Subdivision">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+                <ScalarProperty Name="PFU" ColumnName="PFU" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Kind" ColumnName="Kind" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+                <ScalarProperty Name="Sector" ColumnName="Sector" />
+                <ScalarProperty Name="Director" ColumnName="Director" />
+                <ScalarProperty Name="Zarplata" ColumnName="Zarplata" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subdivision_old">
+            <EntityTypeMapping TypeName="AudienceModel.Subdivision_old">
+              <MappingFragment StoreEntitySet="Subdivision_old">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+                <ScalarProperty Name="Sector" ColumnName="Sector" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+                <ScalarProperty Name="Director" ColumnName="Director" />
+                <ScalarProperty Name="PFU" ColumnName="PFU" />
+                <ScalarProperty Name="Zarplata" ColumnName="Zarplata" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Kind" ColumnName="Kind" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subdivision_old_load">
+            <EntityTypeMapping TypeName="AudienceModel.Subdivision_old_load">
+              <MappingFragment StoreEntitySet="Subdivision_old_load">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+                <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+                <ScalarProperty Name="IsLab" ColumnName="IsLab" />
+                <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+                <ScalarProperty Name="Prorector" ColumnName="Prorector" />
+                <ScalarProperty Name="FundingSource" ColumnName="FundingSource" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SubDivisionDiscipline">
+            <EntityTypeMapping TypeName="AudienceModel.SubDivisionDiscipline">
+              <MappingFragment StoreEntitySet="SubDivisionDiscipline">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SubDivisionId" ColumnName="SubDivisionId" />
+                <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SubGroup">
+            <EntityTypeMapping TypeName="AudienceModel.SubGroup">
+              <MappingFragment StoreEntitySet="SubGroup">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+                <ScalarProperty Name="Course" ColumnName="Course" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="AudienceModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TimeTable">
+            <EntityTypeMapping TypeName="AudienceModel.TimeTable">
+              <MappingFragment StoreEntitySet="TimeTable">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SheduleId" ColumnName="SheduleId" />
+                <ScalarProperty Name="WeekNumber" ColumnName="WeekNumber" />
+                <ScalarProperty Name="WeekDayId" ColumnName="WeekDayId" />
+                <ScalarProperty Name="TemeId" ColumnName="TemeId" />
+                <ScalarProperty Name="EducationKindId" ColumnName="EducationKindId" />
+                <ScalarProperty Name="TutorId" ColumnName="TutorId" />
+                <ScalarProperty Name="StreamId" ColumnName="StreamId" />
+                <ScalarProperty Name="AudienceId" ColumnName="AudienceId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+                <ScalarProperty Name="AudiencePartNumber" ColumnName="AudiencePartNumber" />
+                <ScalarProperty Name="ScheduleId_" ColumnName="ScheduleId_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tutor">
+            <EntityTypeMapping TypeName="AudienceModel.Tutor">
+              <MappingFragment StoreEntitySet="Tutor">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SubdivisionId" ColumnName="SubdivisionId" />
+                <ScalarProperty Name="RankId" ColumnName="RankId" />
+                <ScalarProperty Name="DegreeId" ColumnName="DegreeId" />
+                <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tutor_old">
+            <EntityTypeMapping TypeName="AudienceModel.Tutor_old">
+              <MappingFragment StoreEntitySet="Tutor_old">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SubdivisionId" ColumnName="SubdivisionId" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WeekDay">
+            <EntityTypeMapping TypeName="AudienceModel.WeekDay">
+              <MappingFragment StoreEntitySet="WeekDay">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="AudienceModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+            <EndProperty Name="aspnet_Roles">
+              <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="aspnet_Users">
+              <ScalarProperty Name="UserId" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="CategoryRole" TypeName="AudienceModel.CategoryRole" StoreEntitySet="CategoryRole">
+            <EndProperty Name="aspnet_Roles">
+              <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="Category">
+              <ScalarProperty Name="Id" ColumnName="CategoryId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
