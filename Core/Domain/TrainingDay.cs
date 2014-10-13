@@ -26,6 +26,7 @@ namespace Core.Domain
             var instance = instances.First();
 
             var item = new TrainingDay();
+            
             item.WeekDay = instance.WeekDayId ?? 0; // берём идентификатор, совпадает с номером дня недели.
             item.Lessons = instances.GroupBy(el => el.TemeId).Select(el => Lesson.Generate(el.ToList())).ToList();
 

@@ -100,6 +100,8 @@ namespace Core.Domain
             item.DateStart = instance.Shedule.BegDate;
             item.DateEnd = instance.Shedule.EndDate;
 
+            //if (instance.Shedule.BegWeekNumber == 2)
+            //    item.Parity = instance.WeekNumber == 1 ? 2 : 1;
             item.Parity = instance.WeekNumber;
 
             // извлекаем список преподавателей
