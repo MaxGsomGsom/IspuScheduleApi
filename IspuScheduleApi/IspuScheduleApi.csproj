@@ -231,6 +231,9 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)external\ctt\ctt.exe" s:"$(ProjectDir)Web.config" t:"$(ProjectDir)Web.$(ConfigurationName).config" d:"$(ProjectDir)Web.config"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
