@@ -100,9 +100,19 @@ namespace Core.Domain
             item.DateStart = instance.Shedule.BegDate;
             item.DateEnd = instance.Shedule.EndDate;
 
-            //if (instance.Shedule.BegWeekNumber == 2)
-            //    item.Parity = instance.WeekNumber == 1 ? 2 : 1;
-            item.Parity = instance.WeekNumber;
+            //1 января текущего года
+            DateTime year = new DateTime().AddYears(instance.Shedule.BegDate.Value.Year-1);
+            //находим номер недели начала занятий
+            int numOfWeeks = (int)Math.Ceiling(((instance.Shedule.BegDate.Value - year).Days + (int)year.DayOfWeek) / 7.0);
+            //если четность недели начала занятий в расписании и с начала года совпадает, то оставляем, иначе меняем недели местами
+            if (((numOfWeeks % 2 == 0)? 2 : 1) == instance.Shedule.BegWeekNumber)
+            {
+                item.Parity = instance.WeekNumber;
+            }
+            else
+            {
+                item.Parity = instance.WeekNumber == 1 ? 2 : 1;
+            }
 
             // извлекаем список преподавателей
             item.Teachers = instances.Where(el => el.Tutor != null).Select(el => Teacher.Generate(el.Tutor)).ToList();

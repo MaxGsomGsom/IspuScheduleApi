@@ -3,6 +3,7 @@ using System.Linq;
 using Core.Domain;
 using DAL.Models;
 using Faculty = Core.Domain.Faculty;
+using System;
 
 namespace Core
 {
@@ -45,7 +46,7 @@ namespace Core
         {
             using (var e = new AudienceEntities())
             {
-                return GroupSchedule.Generate(e.TimeTable.Where(el => el.StreamId == idGroup && el.DisciplineId != null).ToList());
+                return GroupSchedule.Generate(e.TimeTable.Where(el => el.StreamId == idGroup && el.DisciplineId != null && DateTime.Compare(DateTime.Now, el.Shedule.BegDate.Value) > 0 && DateTime.Compare(DateTime.Now, el.Shedule.EndDate.Value) < 0).ToList());
             }
         }
     }
