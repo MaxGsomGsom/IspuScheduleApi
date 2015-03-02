@@ -46,7 +46,17 @@ namespace Core
         {
             using (var e = new AudienceEntities())
             {
-                return GroupSchedule.Generate(e.TimeTable.Where(el => el.StreamId == idGroup && el.DisciplineId != null && DateTime.Compare(DateTime.Now, el.Shedule.BegDate.Value) > 0 && DateTime.Compare(DateTime.Now, el.Shedule.EndDate.Value) < 0).ToList());
+                DateTime tomorrow = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day + 1);
+
+                GroupSchedule sched = GroupSchedule.Generate(e.TimeTable.Where(el => 
+                    el.StreamId == idGroup && el.DisciplineId != null && DateTime.Compare(tomorrow, el.Shedule.BegDate.Value) >= 0 && DateTime.Compare(DateTime.Now, el.Shedule.EndDate.Value) <= 0
+                ).ToList());
+
+                if (sched == null) {
+                    sched = new GroupSchedule();
+                    sched.Days = new List<TrainingDay>();
+                }
+                return sched;
             }
         }
     }
