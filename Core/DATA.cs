@@ -46,17 +46,26 @@ namespace Core
         {
             using (var e = new AudienceEntities())
             {
+                //завтрашняя дата, используется, чтобы загружать расписание на день раньше, чем оно начинает действовать
                 DateTime tomorrow = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day + 1);
+                //список расписаний, период действия которых содержит сегодняшнее число
+                List<Shedule> curSchedules = e.Shedule.Where(el => DateTime.Compare(tomorrow, el.BegDate.Value) >= 0 && DateTime.Compare(DateTime.Now, el.EndDate.Value) <= 0).ToList();
 
-                GroupSchedule sched = GroupSchedule.Generate(e.TimeTable.Where(el => 
-                    el.StreamId == idGroup && el.DisciplineId != null && DateTime.Compare(tomorrow, el.Shedule.BegDate.Value) >= 0 && DateTime.Compare(DateTime.Now, el.Shedule.EndDate.Value) <= 0
-                ).ToList());
-
-                if (sched == null) {
-                    sched = new GroupSchedule();
-                    sched.Days = new List<TrainingDay>();
+                GroupSchedule groupSched = null;
+                //получаем первое дейтсвующее расписание для группы
+                for (int i = 0; i < curSchedules.Count && groupSched == null; i++)
+                {
+                    
+                    int curScheduleID = curSchedules[i].Id;
+                    groupSched = GroupSchedule.Generate(e.TimeTable.Where(el => el.StreamId == idGroup && el.DisciplineId != null && el.SheduleId == curScheduleID).ToList());
                 }
-                return sched;
+
+                //если расписания нет - возвращаем пустое
+                if (groupSched == null) {
+                    groupSched = new GroupSchedule();
+                    groupSched.Days = new List<TrainingDay>();
+                }
+                return groupSched;
             }
         }
     }
