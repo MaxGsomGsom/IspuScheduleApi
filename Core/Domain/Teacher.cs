@@ -13,7 +13,7 @@
         public static Teacher Generate(DAL.Models.Tutor instance)
         {
             var item = new Teacher();
-            item.Name = string.Format("{0} {1}", instance.Degree.ShortTitle, instance.Name);
+            item.Name = string.Format("{0}", (instance.FullName == null)? instance.Name : instance.FullName);
 
             return item;
         }
