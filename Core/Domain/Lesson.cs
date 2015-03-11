@@ -109,12 +109,8 @@ namespace Core.Domain
                 firstSeptember = new DateTime(DateTime.Now.Year -1, 9, 1);
             }
 
-            //если первое сентября выпадает на понедельник, то добавляем ещё одну неделю для совместимости (возможно, надо всегда добавлять 1 неделю)
-            int addOneWeek = 0;
-            if (firstSeptember.DayOfWeek == DayOfWeek.Monday) addOneWeek = 1;
-
             //находим номер недели начала занятий в вузовском расписании, нумерация с 1 сентября
-            int numOfWeeks = (int)Math.Ceiling(((instance.Shedule.BegDate.Value - firstSeptember).Days + (int)firstSeptember.DayOfWeek) / 7.0 + addOneWeek);
+            int numOfWeeks = (int)Math.Ceiling(((instance.Shedule.BegDate.Value - firstSeptember).Days + (int)firstSeptember.DayOfWeek) / 7.0);
             
             //если четность недели начала занятий в вузовском расписании и с 1 сентября совпадают, то оставляем четность, иначе меняем недели местами
             if (((numOfWeeks % 2 == 0)? 2 : 1) == instance.Shedule.BegWeekNumber)
