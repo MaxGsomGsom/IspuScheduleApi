@@ -12,61 +12,43 @@ namespace IspuScheduleApi.Models
         /// <summary>
         ///     Наименование предмета
         /// </summary>
-        [JsonProperty("subject", Order = 0)]
+        [JsonProperty("subject")]
         public string Name { get; set; }
 
         /// <summary>
         ///     Тип
         /// </summary>
-        [JsonProperty("type", Order = 1)]
-        public int Type { get; set; }
+        [JsonProperty("type")]
+        public string Type { get; set; }
 
         /// <summary>
-        ///     Время начала
+        ///     Время 
         /// </summary>
-        [JsonProperty("time_start", Order = 2)]
-        public string TimeStart { get; set; }
+        [JsonProperty("time")]
+        public UITime Time { get; set; }
 
         /// <summary>
-        ///     Время окончания
+        ///     Даты
         /// </summary>
-        [JsonProperty("time_end", Order = 3)]
-        public string TimeEnd { get; set; }
-
-        /// <summary>
-        ///     Дата начала занятий
-        /// </summary>
-        [JsonProperty("date_start", Order = 5)]
-        public string DateStart { get; set; }
-
-        /// <summary>
-        ///     Дата окончания занятий
-        /// </summary>
-        [JsonProperty("date_end", Order = 6)]
-        public string DateEnd { get; set; }
+        //[JsonProperty("date")]
+        //public UIDate DatePeriodic { get; set; }
 
         /// <summary>
         ///     Отдельные даты занятий
         /// </summary>
-        [JsonProperty("dates", Order = 7)]
-        public List<DateTime> Dates { get; set; }
-
-        /// <summary>
-        ///     Чётность
-        /// </summary>
-        [JsonProperty("parity", Order = 4)]
-        public int? Parity { get; set; }
-
-        /// <summary>
-        ///     Преподаватели
-        /// </summary>
-        [JsonProperty("teachers", Order = 8)]
-        public List<UITeacher> Teachers { get; set; }
+        [JsonProperty("date")]
+        public object Date { get; set; }
 
         /// <summary>
         ///     Аудитории
         /// </summary>
-        [JsonProperty("auditories", Order = 9)]
+        [JsonProperty("audiences")]
         public List<UIAuditory> Auditories { get; set; }
+
+        /// <summary>
+        ///     Преподаватели
+        /// </summary>
+        [JsonProperty("teachers")]
+        public List<UITeacher> Teachers { get; set; }
     }
 }

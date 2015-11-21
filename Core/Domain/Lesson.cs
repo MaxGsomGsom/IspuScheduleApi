@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Core.Domain
 {
@@ -18,6 +19,12 @@ namespace Core.Domain
         ///     Тип
         /// </summary>
         public int Type { get; set; }
+
+
+        /// <summary>
+        ///     Тип
+        /// </summary>
+        public string TypeString { get; set; }
 
         /// <summary>
         ///     Время начала
@@ -59,12 +66,11 @@ namespace Core.Domain
         /// </summary>
         public List<Auditory> Auditories { get; set; }
 
-        public static Lesson Generate(List<DAL.Models.TimeTable> instances)
+        public static Lesson Generate(DAL.Models.TimeTable instance)
         {
-            if (instances == null || !instances.Any())
+            if (instance == null)
                 return null;
 
-            var instance = instances.First();
 
             var item = new Lesson();
             // заполняем общие поля
@@ -94,12 +100,65 @@ namespace Core.Domain
             else
                 item.Type = 0;
 
+
+            if (instance.EducationKind != null)
+                switch (instance.EducationKind.ShortName)
+                {
+                    case "лек.":
+                        item.TypeString = "Лекция";
+                        break;
+                    case "сем.":
+                        item.TypeString = "Семинар";
+                        break;
+                    case "лаб.":
+                        item.TypeString = "Лабораторная работа";
+                        break;
+                    case "зач.":
+                        item.TypeString = "Зачет";
+                        break;
+                    case "экз.":
+                        item.TypeString = "Экзамен";
+                        break;
+                    //case "пр.":
+                    //    item.TypeString = "Практика";
+                    //    break;
+                    //case "к.пр.":
+                    //    item.TypeString = "Практика";
+                    //    break;
+                    //case "к.":
+                    //    item.TypeString = "Конcультация";
+                    //    break;
+                    default:
+                        item.TypeString = "Практика";
+                        break;
+                }
+            else
+                item.TypeString = "Практика";
+
             item.TimeStart = instance.ETime.BegTime;
             item.TimeEnd = instance.ETime.EndTime;
 
             item.DateStart = instance.Shedule.BegDate;
             item.DateEnd = instance.Shedule.EndDate;
 
+            //устанавливаем даты проведения занятий - однократные или периодические
+            item.Dates = new List<DateTime>();
+            if (instance.Date != null && Regex.IsMatch(instance.Date, "\\d\\d\\.\\d\\d"))
+            {
+
+                if (instance.Date.Length == 5)
+                {
+                    item.Dates.Add(DateTime.Parse(instance.Date + "." + DateTime.Now.Year.ToString()));
+                }
+                else if (instance.Date.Length > 5 && instance.Date.Contains("с"))
+                {
+                    item.DateStart = DateTime.Parse(Regex.Match(instance.Date, "\\d\\d\\.\\d\\d").Value + "." + DateTime.Now.Year.ToString());
+                }
+                else
+                {
+                    throw new NotImplementedException();
+                }
+            }
 
 
             //находим 1 сентября этого учебного года
@@ -124,9 +183,15 @@ namespace Core.Domain
 
 
             // извлекаем список преподавателей
-            item.Teachers = instances.Where(el => el.Tutor != null).Select(el => Teacher.Generate(el.Tutor)).ToList();
+            //item.Teachers = instances.Where(el => el.Tutor != null).Select(el => Teacher.Generate(el.Tutor)).ToList();
+            item.Teachers = new List<Teacher>();
+            if (instance.Tutor != null)
+                item.Teachers.Add(Teacher.Generate(instance.Tutor));
             // извлекаем аудитории
-            item.Auditories = instances.Where(el => el.Audience != null).Select(el => Auditory.Generate(el.Audience)).ToList();
+            //item.Auditories = instances.Where(el => el.Audience != null).Select(el => Auditory.Generate(el.Audience)).ToList();
+            item.Auditories = new List<Auditory>();
+            if (instance.Audience != null)
+                item.Auditories.Add(Auditory.Generate(instance.Audience));
 
             return item;
         }

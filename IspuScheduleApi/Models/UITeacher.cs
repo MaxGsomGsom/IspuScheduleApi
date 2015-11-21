@@ -7,7 +7,7 @@ namespace IspuScheduleApi.Models
     /// </summary>
     public class UITeacher
     {
-        [JsonProperty("teacher_name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
     }
 }

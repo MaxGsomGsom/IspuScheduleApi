@@ -20,6 +20,13 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -152,34 +159,33 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ScheduleController.cs" />
     <Compile Include="Factories\UIAuditoryFactory.cs" />
-    <Compile Include="Factories\UIFacultiesFactory.cs" />
     <Compile Include="Factories\UIFacultyFactory.cs" />
     <Compile Include="Factories\UIGroupFactory.cs" />
-    <Compile Include="Factories\UIGroupsFactory.cs" />
-    <Compile Include="Factories\UILesssonFactory.cs" />
+    <Compile Include="Factories\UILessonFactory.cs" />
     <Compile Include="Factories\UIScheduleFactory.cs" />
     <Compile Include="Factories\UITeacherFactory.cs" />
-    <Compile Include="Factories\UITrainingDayFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\UIAuditory.cs" />
-    <Compile Include="Models\UIFaculties.cs" />
+    <Compile Include="Models\UIDate.cs" />
+    <Compile Include="Models\UITime.cs" />
     <Compile Include="Models\UIFaculty.cs" />
     <Compile Include="Models\UIGroup.cs" />
-    <Compile Include="Models\UIGroups.cs" />
     <Compile Include="Models\UILesson.cs" />
     <Compile Include="Models\UISchedule.cs" />
     <Compile Include="Models\UITeacher.cs" />
-    <Compile Include="Models\UITrainingDay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>

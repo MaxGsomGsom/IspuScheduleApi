@@ -5,6 +5,11 @@ namespace IspuScheduleApi.Factories
 {
     public static class UIAuditoryFactory
     {
+        /// <summary>
+        /// Фабрика для создания UI-модели
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <returns></returns>
         public static UIAuditory Init(Auditory instance)
         {
             var item = new UIAuditory();

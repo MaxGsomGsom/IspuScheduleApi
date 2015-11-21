@@ -4,12 +4,245 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="Хранилище AudienceModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище AudienceModel" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Хранилище AudienceModelContainer">
+          <EntitySet Name="AcademicRank" EntityType="Хранилище AudienceModel.AcademicRank" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Appointment" EntityType="Хранилище AudienceModel.Appointment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Applications" EntityType="Хранилище AudienceModel.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Membership" EntityType="Хранилище AudienceModel.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Roles" EntityType="Хранилище AudienceModel.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="Хранилище AudienceModel.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Users" EntityType="Хранилище AudienceModel.aspnet_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_UsersInRoles" EntityType="Хранилище AudienceModel.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Audience" EntityType="Хранилище AudienceModel.Audience" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Beauty" EntityType="Хранилище AudienceModel.Beauty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Building" EntityType="Хранилище AudienceModel.Building" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Category" EntityType="Хранилище AudienceModel.Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoryRole" EntityType="Хранилище AudienceModel.CategoryRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Degree" EntityType="Хранилище AudienceModel.Degree" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Discipline" EntityType="Хранилище AudienceModel.Discipline" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Doc" EntityType="Хранилище AudienceModel.Doc" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DocType" EntityType="Хранилище AudienceModel.DocType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EducationForm" EntityType="Хранилище AudienceModel.EducationForm" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EducationKind" EntityType="Хранилище AudienceModel.EducationKind" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Equipment" EntityType="Хранилище AudienceModel.Equipment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EquipmentType" EntityType="Хранилище AudienceModel.EquipmentType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Estate" EntityType="Хранилище AudienceModel.Estate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ETime" EntityType="Хранилище AudienceModel.ETime" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EventType" EntityType="Хранилище AudienceModel.EventType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Faculty" EntityType="Хранилище AudienceModel.Faculty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="File" EntityType="Хранилище AudienceModel.File" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Groups" EntityType="Хранилище AudienceModel.Groups" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LampType" EntityType="Хранилище AudienceModel.LampType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Map" EntityType="Хранилище AudienceModel.Map" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="News" EntityType="Хранилище AudienceModel.News" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ObjectType" EntityType="Хранилище AudienceModel.ObjectType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Profile" EntityType="Хранилище AudienceModel.Profile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Repair" EntityType="Хранилище AudienceModel.Repair" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Responsible" EntityType="Хранилище AudienceModel.Responsible" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Section" EntityType="Хранилище AudienceModel.Section" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sem" EntityType="Хранилище AudienceModel.Sem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Shedule" EntityType="Хранилище AudienceModel.Shedule" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SheduleType" EntityType="Хранилище AudienceModel.SheduleType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="State" EntityType="Хранилище AudienceModel.State" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Statistics" EntityType="Хранилище AudienceModel.Statistics" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Stream" EntityType="Хранилище AudienceModel.Stream" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subdivision" EntityType="Хранилище AudienceModel.Subdivision" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subdivision_old" EntityType="Хранилище AudienceModel.Subdivision_old" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Subdivision_old_load" EntityType="Хранилище AudienceModel.Subdivision_old_load" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SubDivisionDiscipline" EntityType="Хранилище AudienceModel.SubDivisionDiscipline" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SubGroup" EntityType="Хранилище AudienceModel.SubGroup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="Хранилище AudienceModel.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TimeTable" EntityType="Хранилище AudienceModel.TimeTable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tutor" EntityType="Хранилище AudienceModel.Tutor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tutor_old" EntityType="Хранилище AudienceModel.Tutor_old" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="WeekDay" EntityType="Хранилище AudienceModel.WeekDay" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__21B6055D" Association="Хранилище AudienceModel.FK__aspnet_Me__Appli__21B6055D">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__22AA2996" Association="Хранилище AudienceModel.FK__aspnet_Me__UserI__22AA2996">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__38996AB5" Association="Хранилище AudienceModel.FK__aspnet_Ro__Appli__38996AB5">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__0DAF0CB0" Association="Хранилище AudienceModel.FK__aspnet_Us__Appli__0DAF0CB0">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__RoleI__3F466844" Association="Хранилище AudienceModel.FK__aspnet_Us__RoleI__3F466844">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__3E52440B" Association="Хранилище AudienceModel.FK__aspnet_Us__UserI__3E52440B">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_LampType" Association="Хранилище AudienceModel.FK_Audience_LampType">
+            <End Role="LampType" EntitySet="LampType" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Map" Association="Хранилище AudienceModel.FK_Audience_Map">
+            <End Role="Map" EntitySet="Map" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_356_CATEGORY" Association="Хранилище AudienceModel.FK_AUDIENCE_REF_356_CATEGORY">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_371_BUILDING" Association="Хранилище AudienceModel.FK_AUDIENCE_REF_371_BUILDING">
+            <End Role="Building" EntitySet="Building" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REF_377_STATE" Association="Хранилище AudienceModel.FK_AUDIENCE_REF_377_STATE">
+            <End Role="State" EntitySet="State" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AUDIENCE_REFERENCE_BEAUTY" Association="Хранилище AudienceModel.FK_AUDIENCE_REFERENCE_BEAUTY">
+            <End Role="Beauty" EntitySet="Beauty" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Responsible" Association="Хранилище AudienceModel.FK_Audience_Responsible">
+            <End Role="Responsible" EntitySet="Responsible" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Audience_Subdivision" Association="Хранилище AudienceModel.FK_Audience_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Audience" EntitySet="Audience" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryRole_aspnet_Roles" Association="Хранилище AudienceModel.FK_CategoryRole_aspnet_Roles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="CategoryRole" EntitySet="CategoryRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoryRole_Category" Association="Хранилище AudienceModel.FK_CategoryRole_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="CategoryRole" EntitySet="CategoryRole" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_Doc" Association="Хранилище AudienceModel.FK_Doc_Doc">
+            <End Role="ObjectType" EntitySet="ObjectType" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_DocType" Association="Хранилище AudienceModel.FK_Doc_DocType">
+            <End Role="DocType" EntitySet="DocType" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Doc_File" Association="Хранилище AudienceModel.FK_Doc_File">
+            <End Role="File" EntitySet="File" />
+            <End Role="Doc" EntitySet="Doc" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPMEN_REFERENCE_AUDIENCE" Association="Хранилище AudienceModel.FK_EQUIPMEN_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="Equipment" EntitySet="Equipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EQUIPMEN_REFERENCE_EQUIPMEN" Association="Хранилище AudienceModel.FK_EQUIPMEN_REFERENCE_EQUIPMEN">
+            <End Role="EquipmentType" EntitySet="EquipmentType" />
+            <End Role="Equipment" EntitySet="Equipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Estate_Estate" Association="Хранилище AudienceModel.FK_Estate_Estate">
+            <End Role="Estate" EntitySet="Estate" />
+            <End Role="Estate1" EntitySet="Estate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Groups_Subdivision" Association="Хранилище AudienceModel.FK_Groups_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Groups" EntitySet="Groups" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_aspnet_Users" Association="Хранилище AudienceModel.FK_Profile_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="Profile" EntitySet="Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPAIR_REFERENCE_AUDIENCE" Association="Хранилище AudienceModel.FK_REPAIR_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="Repair" EntitySet="Repair" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_EDUCATIO" Association="Хранилище AudienceModel.FK_SHEDULE_REFERENCE_EDUCATIO">
+            <End Role="EducationForm" EntitySet="EducationForm" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_SEM" Association="Хранилище AudienceModel.FK_SHEDULE_REFERENCE_SEM">
+            <End Role="Sem" EntitySet="Sem" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SHEDULE_REFERENCE_SHEDULET" Association="Хранилище AudienceModel.FK_SHEDULE_REFERENCE_SHEDULET">
+            <End Role="SheduleType" EntitySet="SheduleType" />
+            <End Role="Shedule" EntitySet="Shedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_aspnet_Users" Association="Хранилище AudienceModel.FK_Statistics_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_EventType" Association="Хранилище AudienceModel.FK_Statistics_EventType">
+            <End Role="EventType" EntitySet="EventType" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Statistics_Section" Association="Хранилище AudienceModel.FK_Statistics_Section">
+            <End Role="Section" EntitySet="Section" />
+            <End Role="Statistics" EntitySet="Statistics" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubDivisionDiscipline_Discipline" Association="Хранилище AudienceModel.FK_SubDivisionDiscipline_Discipline">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="SubDivisionDiscipline" EntitySet="SubDivisionDiscipline" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SubGroup_Groups" Association="Хранилище AudienceModel.FK_SubGroup_Groups">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="SubGroup" EntitySet="SubGroup" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_DISCIPLINE" Association="Хранилище AudienceModel.FK_TIMETABL_DISCIPLINE">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_AUDIENCE" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_AUDIENCE">
+            <End Role="Audience" EntitySet="Audience" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_EDUCATIO" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_EDUCATIO">
+            <End Role="EducationKind" EntitySet="EducationKind" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_ETIME" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_ETIME">
+            <End Role="ETime" EntitySet="ETime" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_SHEDULE" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_SHEDULE">
+            <End Role="Shedule" EntitySet="Shedule" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_SUBGROUP" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_SUBGROUP">
+            <End Role="SubGroup" EntitySet="SubGroup" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_TUTOR" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_TUTOR">
+            <End Role="Tutor" EntitySet="Tutor" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TIMETABL_REFERENCE_WEEKDAY" Association="Хранилище AudienceModel.FK_TIMETABL_REFERENCE_WEEKDAY">
+            <End Role="WeekDay" EntitySet="WeekDay" />
+            <End Role="TimeTable" EntitySet="TimeTable" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_new_AcademicRank" Association="Хранилище AudienceModel.FK_Tutor_new_AcademicRank">
+            <End Role="AcademicRank" EntitySet="AcademicRank" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_new_Appointment" Association="Хранилище AudienceModel.FK_Tutor_new_Appointment">
+            <End Role="Appointment" EntitySet="Appointment" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_new_Degree" Association="Хранилище AudienceModel.FK_Tutor_new_Degree">
+            <End Role="Degree" EntitySet="Degree" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tutor_Subdivision" Association="Хранилище AudienceModel.FK_Tutor_Subdivision">
+            <End Role="Subdivision" EntitySet="Subdivision" />
+            <End Role="Tutor" EntitySet="Tutor" />
+          </AssociationSet>
+        </EntityContainer>
         <EntityType Name="AcademicRank">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="varchar" MaxLength="80" />
           <Property Name="ShortTitle" Type="varchar" MaxLength="20" />
         </EntityType>
@@ -17,15 +250,15 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="varchar" MaxLength="250" />
         </EntityType>
         <EntityType Name="aspnet_Applications">
           <Key>
             <PropertyRef Name="ApplicationId" />
           </Key>
-          <Property Name="ApplicationName" Type="nvarchar" MaxLength="256" Nullable="false" />
-          <Property Name="LoweredApplicationName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
           <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="Description" Type="nvarchar" MaxLength="256" />
         </EntityType>
@@ -35,9 +268,9 @@
           </Key>
           <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
-          <Property Name="Password" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
           <Property Name="PasswordFormat" Type="int" Nullable="false" />
-          <Property Name="PasswordSalt" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
           <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
           <Property Name="Email" Type="nvarchar" MaxLength="256" />
           <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
@@ -61,8 +294,8 @@
           </Key>
           <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
-          <Property Name="RoleName" Type="nvarchar" MaxLength="256" Nullable="false" />
-          <Property Name="LoweredRoleName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
           <Property Name="Description" Type="nvarchar" MaxLength="256" />
         </EntityType>
         <EntityType Name="aspnet_SchemaVersions">
@@ -70,8 +303,8 @@
             <PropertyRef Name="Feature" />
             <PropertyRef Name="CompatibleSchemaVersion" />
           </Key>
-          <Property Name="Feature" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="CompatibleSchemaVersion" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
           <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="aspnet_Users">
@@ -80,8 +313,8 @@
           </Key>
           <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
           <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
-          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
-          <Property Name="LoweredUserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
           <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
           <Property Name="IsAnonymous" Type="bit" Nullable="false" />
           <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
@@ -98,7 +331,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="GraphId" Type="int" />
           <Property Name="BuildingId" Type="int" />
           <Property Name="Number" Type="varchar" MaxLength="10" />
@@ -146,14 +379,14 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="Building">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="varchar" MaxLength="50" />
           <Property Name="Note" Type="varchar" MaxLength="500" />
           <Property Name="Address" Type="varchar" MaxLength="150" />
@@ -162,7 +395,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="varchar" MaxLength="100" />
           <Property Name="ShortTitle" Type="varchar" MaxLength="10" />
         </EntityType>
@@ -178,7 +411,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="varchar" MaxLength="80" />
           <Property Name="ShortTitle" Type="varchar" MaxLength="80" />
         </EntityType>
@@ -201,8 +434,8 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="250" />
           <Property Name="Date" Type="datetime" Nullable="false" />
           <Property Name="Description" Type="varchar" MaxLength="500" />
           <Property Name="DateDoc" Type="datetime" />
@@ -215,8 +448,8 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
         </EntityType>
         <EntityType Name="EducationForm">
           <Key>
@@ -237,7 +470,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="AudienceId" Type="int" Nullable="false" />
           <Property Name="ElementId" Type="int" />
           <Property Name="Quantity" Type="int" />
@@ -249,16 +482,16 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
         </EntityType>
         <EntityType Name="Estate">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="IsLot" Type="bit" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="500" />
           <Property Name="Litera" Type="varchar" MaxLength="100" />
           <Property Name="Address" Type="varchar" MaxLength="250" />
           <Property Name="FloorCount" Type="varchar" MaxLength="50" />
@@ -279,15 +512,15 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="Description" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" />
         </EntityType>
         <EntityType Name="Faculty">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="ShortTitle" Type="varchar" MaxLength="10" />
           <Property Name="Title" Type="varchar" MaxLength="100" />
         </EntityType>
@@ -295,16 +528,16 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Data" Type="varbinary(max)" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="256" Nullable="false" />
-          <Property Name="Format" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Format" Type="nvarchar" Nullable="false" MaxLength="256" />
         </EntityType>
         <EntityType Name="Groups">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="varchar" MaxLength="10" />
           <Property Name="SubDivisionId" Type="int" />
         </EntityType>
@@ -312,26 +545,26 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="50" />
           <Property Name="Description" Type="varchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="Map">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="150" Nullable="false" />
-          <Property Name="Path" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="Path" Type="varchar" Nullable="false" MaxLength="250" />
         </EntityType>
         <EntityType Name="News">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Header" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="varchar" Nullable="false" MaxLength="1000" />
           <Property Name="Date" Type="datetime" Nullable="false" />
-          <Property Name="ShortText" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="ShortText" Type="varchar" Nullable="false" MaxLength="1000" />
           <Property Name="Text" Type="varchar(max)" Nullable="false" />
           <Property Name="IsActive" Type="bit" Nullable="false" />
         </EntityType>
@@ -340,7 +573,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Code" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="10" />
           <Property Name="Title" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Profile">
@@ -362,7 +595,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="AudienceId" Type="int" Nullable="false" />
           <Property Name="Description" Type="varchar" MaxLength="500" />
           <Property Name="BeginDate" Type="datetime" />
@@ -374,16 +607,16 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="50" />
           <Property Name="Description" Type="varchar" MaxLength="500" />
         </EntityType>
         <EntityType Name="Section">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="Description" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" />
         </EntityType>
         <EntityType Name="Sem">
           <Key>
@@ -396,7 +629,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="LYear" Type="varchar" MaxLength="9" />
           <Property Name="SemId" Type="int" />
           <Property Name="EducationFormId" Type="int" />
@@ -418,21 +651,21 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="Statistics">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="EventTypeID" Type="int" Nullable="false" />
           <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
           <Property Name="EventDate" Type="datetime" Nullable="false" />
           <Property Name="SectionID" Type="int" Nullable="false" />
           <Property Name="EventObjectID" Type="int" Nullable="false" />
-          <Property Name="UserIP" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="Description" Type="nvarchar" MaxLength="4000" />
+          <Property Name="UserIP" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Description" Type="nvarchar" />
         </EntityType>
         <EntityType Name="Stream">
           <Key>
@@ -478,7 +711,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Title" Type="varchar" MaxLength="250" />
           <Property Name="ShortTitle" Type="varchar" MaxLength="15" />
           <Property Name="FacultyId" Type="int" />
@@ -500,7 +733,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="char" MaxLength="8" />
           <Property Name="GroupId" Type="int" />
           <Property Name="Course" Type="int" />
@@ -509,9 +742,9 @@
           <Key>
             <PropertyRef Name="diagram_id" />
           </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
           <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
@@ -519,7 +752,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="SheduleId" Type="int" />
           <Property Name="WeekNumber" Type="int" />
           <Property Name="WeekDayId" Type="int" />
@@ -543,7 +776,6 @@
           <Property Name="RankId" Type="int" Nullable="false" />
           <Property Name="DegreeId" Type="int" />
           <Property Name="AppointmentId" Type="int" />
-          <Property Name="FullName" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="Tutor_old">
           <Key>
@@ -563,8 +795,8 @@
           <Property Name="ShortName" Type="varchar" MaxLength="2" />
         </EntityType>
         <Association Name="FK__aspnet_Me__Appli__21B6055D">
-          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
-          <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="*" />
+          <End Role="aspnet_Applications" Type="Хранилище AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="Хранилище AudienceModel.aspnet_Membership" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Applications">
               <PropertyRef Name="ApplicationId" />
@@ -575,8 +807,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__aspnet_Me__UserI__22AA2996">
-          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
-          <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="0..1" />
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="Хранилище AudienceModel.aspnet_Membership" Multiplicity="0..1" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Users">
               <PropertyRef Name="UserId" />
@@ -587,8 +819,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__aspnet_Ro__Appli__38996AB5">
-          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
-          <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="*" />
+          <End Role="aspnet_Applications" Type="Хранилище AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="Хранилище AudienceModel.aspnet_Roles" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Applications">
               <PropertyRef Name="ApplicationId" />
@@ -599,8 +831,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__aspnet_Us__Appli__0DAF0CB0">
-          <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
-          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="*" />
+          <End Role="aspnet_Applications" Type="Хранилище AudienceModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Applications">
               <PropertyRef Name="ApplicationId" />
@@ -611,8 +843,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__aspnet_Us__RoleI__3F466844">
-          <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="1" />
-          <End Role="aspnet_UsersInRoles" Type="Self.aspnet_UsersInRoles" Multiplicity="*" />
+          <End Role="aspnet_Roles" Type="Хранилище AudienceModel.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="Хранилище AudienceModel.aspnet_UsersInRoles" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Roles">
               <PropertyRef Name="RoleId" />
@@ -623,8 +855,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__aspnet_Us__UserI__3E52440B">
-          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
-          <End Role="aspnet_UsersInRoles" Type="Self.aspnet_UsersInRoles" Multiplicity="*" />
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="Хранилище AudienceModel.aspnet_UsersInRoles" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Users">
               <PropertyRef Name="UserId" />
@@ -635,8 +867,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Audience_LampType">
-          <End Role="LampType" Type="Self.LampType" Multiplicity="0..1" />
-          <End Role="Audience" Type="Self.Audience" Multiplicity="*" />
+          <End Role="LampType" Type="Хранилище AudienceModel.LampType" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="LampType">
               <PropertyRef Name="Id" />
@@ -647,8 +879,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Audience_Map">
-          <End Role="Map" Type="Self.Map" Multiplicity="0..1" />
-          <End Role="Audience" Type="Self.Audience" Multiplicity="*" />
+          <End Role="Map" Type="Хранилище AudienceModel.Map" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Map">
               <PropertyRef Name="Id" />
@@ -659,8 +891,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_AUDIENCE_REF_356_CATEGORY">
-          <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
-          <End Role="Audience" Type="Self.Audience" Multiplicity="*" />
+          <End Role="Category" Type="Хранилище AudienceModel.Category" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Category">
               <PropertyRef Name="Id" />
@@ -671,8 +903,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_AUDIENCE_REF_371_BUILDING">
-          <End Role="Building" Type="Self.Building" Multiplicity="0..1" />
-          <End Role="Audience" Type="Self.Audience" Multiplicity="*" />
+          <End Role="Building" Type="Хранилище AudienceModel.Building" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Building">
               <PropertyRef Name="Id" />
@@ -683,8 +915,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_AUDIENCE_REF_377_STATE">
-          <End Role="State" Type="Self.State" Multiplicity="0..1" />
-          <End Role="Audience" Type="Self.Audience" Multiplicity="*" />
+          <End Role="State" Type="Хранилище AudienceModel.State" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="State">
               <PropertyRef Name="Id" />
@@ -695,8 +927,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_AUDIENCE_REFERENCE_BEAUTY">
-          <End Role="Beauty" Type="Self.Beauty" Multiplicity="0..1" />
-          <End Role="Audience" Type="Self.Audience" Multiplicity="*" />
+          <End Role="Beauty" Type="Хранилище AudienceModel.Beauty" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Beauty">
               <PropertyRef Name="Id" />
@@ -707,8 +939,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Audience_Responsible">
-          <End Role="Responsible" Type="Self.Responsible" Multiplicity="0..1" />
-          <End Role="Audience" Type="Self.Audience" Multiplicity="*" />
+          <End Role="Responsible" Type="Хранилище AudienceModel.Responsible" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Responsible">
               <PropertyRef Name="Id" />
@@ -719,8 +951,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Audience_Subdivision">
-          <End Role="Subdivision" Type="Self.Subdivision" Multiplicity="0..1" />
-          <End Role="Audience" Type="Self.Audience" Multiplicity="*" />
+          <End Role="Subdivision" Type="Хранилище AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Subdivision">
               <PropertyRef Name="Id" />
@@ -731,10 +963,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_CategoryRole_aspnet_Roles">
-          <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="1">
+          <End Role="aspnet_Roles" Type="Хранилище AudienceModel.aspnet_Roles" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="CategoryRole" Type="Self.CategoryRole" Multiplicity="*" />
+          <End Role="CategoryRole" Type="Хранилище AudienceModel.CategoryRole" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Roles">
               <PropertyRef Name="RoleId" />
@@ -745,10 +977,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_CategoryRole_Category">
-          <End Role="Category" Type="Self.Category" Multiplicity="1">
+          <End Role="Category" Type="Хранилище AudienceModel.Category" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="CategoryRole" Type="Self.CategoryRole" Multiplicity="*" />
+          <End Role="CategoryRole" Type="Хранилище AudienceModel.CategoryRole" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Category">
               <PropertyRef Name="Id" />
@@ -759,8 +991,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Doc_Doc">
-          <End Role="ObjectType" Type="Self.ObjectType" Multiplicity="0..1" />
-          <End Role="Doc" Type="Self.Doc" Multiplicity="*" />
+          <End Role="ObjectType" Type="Хранилище AudienceModel.ObjectType" Multiplicity="0..1" />
+          <End Role="Doc" Type="Хранилище AudienceModel.Doc" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ObjectType">
               <PropertyRef Name="Id" />
@@ -771,8 +1003,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Doc_DocType">
-          <End Role="DocType" Type="Self.DocType" Multiplicity="0..1" />
-          <End Role="Doc" Type="Self.Doc" Multiplicity="*" />
+          <End Role="DocType" Type="Хранилище AudienceModel.DocType" Multiplicity="0..1" />
+          <End Role="Doc" Type="Хранилище AudienceModel.Doc" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="DocType">
               <PropertyRef Name="Id" />
@@ -783,10 +1015,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Doc_File">
-          <End Role="File" Type="Self.File" Multiplicity="0..1">
+          <End Role="File" Type="Хранилище AudienceModel.File" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Doc" Type="Self.Doc" Multiplicity="*" />
+          <End Role="Doc" Type="Хранилище AudienceModel.Doc" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="File">
               <PropertyRef Name="ID" />
@@ -797,8 +1029,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_EQUIPMEN_REFERENCE_AUDIENCE">
-          <End Role="Audience" Type="Self.Audience" Multiplicity="1" />
-          <End Role="Equipment" Type="Self.Equipment" Multiplicity="*" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="1" />
+          <End Role="Equipment" Type="Хранилище AudienceModel.Equipment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Audience">
               <PropertyRef Name="Id" />
@@ -809,8 +1041,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_EQUIPMEN_REFERENCE_EQUIPMEN">
-          <End Role="EquipmentType" Type="Self.EquipmentType" Multiplicity="0..1" />
-          <End Role="Equipment" Type="Self.Equipment" Multiplicity="*" />
+          <End Role="EquipmentType" Type="Хранилище AudienceModel.EquipmentType" Multiplicity="0..1" />
+          <End Role="Equipment" Type="Хранилище AudienceModel.Equipment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="EquipmentType">
               <PropertyRef Name="Id" />
@@ -821,8 +1053,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Estate_Estate">
-          <End Role="Estate" Type="Self.Estate" Multiplicity="0..1" />
-          <End Role="Estate1" Type="Self.Estate" Multiplicity="*" />
+          <End Role="Estate" Type="Хранилище AudienceModel.Estate" Multiplicity="0..1" />
+          <End Role="Estate1" Type="Хранилище AudienceModel.Estate" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Estate">
               <PropertyRef Name="Id" />
@@ -833,8 +1065,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Groups_Subdivision">
-          <End Role="Subdivision" Type="Self.Subdivision" Multiplicity="0..1" />
-          <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+          <End Role="Subdivision" Type="Хранилище AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Groups" Type="Хранилище AudienceModel.Groups" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Subdivision">
               <PropertyRef Name="Id" />
@@ -845,10 +1077,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Profile_aspnet_Users">
-          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1">
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Profile" Type="Self.Profile" Multiplicity="0..1" />
+          <End Role="Profile" Type="Хранилище AudienceModel.Profile" Multiplicity="0..1" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Users">
               <PropertyRef Name="UserId" />
@@ -859,8 +1091,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_REPAIR_REFERENCE_AUDIENCE">
-          <End Role="Audience" Type="Self.Audience" Multiplicity="1" />
-          <End Role="Repair" Type="Self.Repair" Multiplicity="*" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="1" />
+          <End Role="Repair" Type="Хранилище AudienceModel.Repair" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Audience">
               <PropertyRef Name="Id" />
@@ -871,8 +1103,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_SHEDULE_REFERENCE_EDUCATIO">
-          <End Role="EducationForm" Type="Self.EducationForm" Multiplicity="0..1" />
-          <End Role="Shedule" Type="Self.Shedule" Multiplicity="*" />
+          <End Role="EducationForm" Type="Хранилище AudienceModel.EducationForm" Multiplicity="0..1" />
+          <End Role="Shedule" Type="Хранилище AudienceModel.Shedule" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="EducationForm">
               <PropertyRef Name="Id" />
@@ -883,8 +1115,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_SHEDULE_REFERENCE_SEM">
-          <End Role="Sem" Type="Self.Sem" Multiplicity="0..1" />
-          <End Role="Shedule" Type="Self.Shedule" Multiplicity="*" />
+          <End Role="Sem" Type="Хранилище AudienceModel.Sem" Multiplicity="0..1" />
+          <End Role="Shedule" Type="Хранилище AudienceModel.Shedule" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Sem">
               <PropertyRef Name="Id" />
@@ -895,8 +1127,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_SHEDULE_REFERENCE_SHEDULET">
-          <End Role="SheduleType" Type="Self.SheduleType" Multiplicity="0..1" />
-          <End Role="Shedule" Type="Self.Shedule" Multiplicity="*" />
+          <End Role="SheduleType" Type="Хранилище AudienceModel.SheduleType" Multiplicity="0..1" />
+          <End Role="Shedule" Type="Хранилище AudienceModel.Shedule" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="SheduleType">
               <PropertyRef Name="Id" />
@@ -907,10 +1139,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Statistics_aspnet_Users">
-          <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1">
+          <End Role="aspnet_Users" Type="Хранилище AudienceModel.aspnet_Users" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Statistics" Type="Self.Statistics" Multiplicity="*" />
+          <End Role="Statistics" Type="Хранилище AudienceModel.Statistics" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="aspnet_Users">
               <PropertyRef Name="UserId" />
@@ -921,8 +1153,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Statistics_EventType">
-          <End Role="EventType" Type="Self.EventType" Multiplicity="1" />
-          <End Role="Statistics" Type="Self.Statistics" Multiplicity="*" />
+          <End Role="EventType" Type="Хранилище AudienceModel.EventType" Multiplicity="1" />
+          <End Role="Statistics" Type="Хранилище AudienceModel.Statistics" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="EventType">
               <PropertyRef Name="ID" />
@@ -933,8 +1165,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Statistics_Section">
-          <End Role="Section" Type="Self.Section" Multiplicity="1" />
-          <End Role="Statistics" Type="Self.Statistics" Multiplicity="*" />
+          <End Role="Section" Type="Хранилище AudienceModel.Section" Multiplicity="1" />
+          <End Role="Statistics" Type="Хранилище AudienceModel.Statistics" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Section">
               <PropertyRef Name="ID" />
@@ -945,8 +1177,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_SubDivisionDiscipline_Discipline">
-          <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
-          <End Role="SubDivisionDiscipline" Type="Self.SubDivisionDiscipline" Multiplicity="*" />
+          <End Role="Discipline" Type="Хранилище AudienceModel.Discipline" Multiplicity="1" />
+          <End Role="SubDivisionDiscipline" Type="Хранилище AudienceModel.SubDivisionDiscipline" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Discipline">
               <PropertyRef Name="Id" />
@@ -957,8 +1189,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_SubGroup_Groups">
-          <End Role="Groups" Type="Self.Groups" Multiplicity="0..1" />
-          <End Role="SubGroup" Type="Self.SubGroup" Multiplicity="*" />
+          <End Role="Groups" Type="Хранилище AudienceModel.Groups" Multiplicity="0..1" />
+          <End Role="SubGroup" Type="Хранилище AudienceModel.SubGroup" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Groups">
               <PropertyRef Name="Id" />
@@ -969,8 +1201,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TIMETABL_DISCIPLINE">
-          <End Role="Discipline" Type="Self.Discipline" Multiplicity="0..1" />
-          <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+          <End Role="Discipline" Type="Хранилище AudienceModel.Discipline" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Discipline">
               <PropertyRef Name="Id" />
@@ -981,8 +1213,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TIMETABL_REFERENCE_AUDIENCE">
-          <End Role="Audience" Type="Self.Audience" Multiplicity="0..1" />
-          <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+          <End Role="Audience" Type="Хранилище AudienceModel.Audience" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Audience">
               <PropertyRef Name="Id" />
@@ -993,8 +1225,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TIMETABL_REFERENCE_EDUCATIO">
-          <End Role="EducationKind" Type="Self.EducationKind" Multiplicity="0..1" />
-          <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+          <End Role="EducationKind" Type="Хранилище AudienceModel.EducationKind" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="EducationKind">
               <PropertyRef Name="Id" />
@@ -1005,8 +1237,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TIMETABL_REFERENCE_ETIME">
-          <End Role="ETime" Type="Self.ETime" Multiplicity="0..1" />
-          <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+          <End Role="ETime" Type="Хранилище AudienceModel.ETime" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ETime">
               <PropertyRef Name="Id" />
@@ -1017,10 +1249,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TIMETABL_REFERENCE_SHEDULE">
-          <End Role="Shedule" Type="Self.Shedule" Multiplicity="0..1">
+          <End Role="Shedule" Type="Хранилище AudienceModel.Shedule" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Shedule">
               <PropertyRef Name="Id" />
@@ -1031,8 +1263,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TIMETABL_REFERENCE_SUBGROUP">
-          <End Role="SubGroup" Type="Self.SubGroup" Multiplicity="0..1" />
-          <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+          <End Role="SubGroup" Type="Хранилище AudienceModel.SubGroup" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="SubGroup">
               <PropertyRef Name="Id" />
@@ -1043,8 +1275,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TIMETABL_REFERENCE_TUTOR">
-          <End Role="Tutor" Type="Self.Tutor" Multiplicity="0..1" />
-          <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Tutor">
               <PropertyRef Name="Id" />
@@ -1055,8 +1287,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TIMETABL_REFERENCE_WEEKDAY">
-          <End Role="WeekDay" Type="Self.WeekDay" Multiplicity="0..1" />
-          <End Role="TimeTable" Type="Self.TimeTable" Multiplicity="*" />
+          <End Role="WeekDay" Type="Хранилище AudienceModel.WeekDay" Multiplicity="0..1" />
+          <End Role="TimeTable" Type="Хранилище AudienceModel.TimeTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="WeekDay">
               <PropertyRef Name="Id" />
@@ -1067,8 +1299,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Tutor_new_AcademicRank">
-          <End Role="AcademicRank" Type="Self.AcademicRank" Multiplicity="1" />
-          <End Role="Tutor" Type="Self.Tutor" Multiplicity="*" />
+          <End Role="AcademicRank" Type="Хранилище AudienceModel.AcademicRank" Multiplicity="1" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="AcademicRank">
               <PropertyRef Name="Id" />
@@ -1079,8 +1311,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Tutor_new_Appointment">
-          <End Role="Appointment" Type="Self.Appointment" Multiplicity="0..1" />
-          <End Role="Tutor" Type="Self.Tutor" Multiplicity="*" />
+          <End Role="Appointment" Type="Хранилище AudienceModel.Appointment" Multiplicity="0..1" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Appointment">
               <PropertyRef Name="Id" />
@@ -1091,8 +1323,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Tutor_new_Degree">
-          <End Role="Degree" Type="Self.Degree" Multiplicity="0..1" />
-          <End Role="Tutor" Type="Self.Tutor" Multiplicity="*" />
+          <End Role="Degree" Type="Хранилище AudienceModel.Degree" Multiplicity="0..1" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Degree">
               <PropertyRef Name="Id" />
@@ -1103,8 +1335,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Tutor_Subdivision">
-          <End Role="Subdivision" Type="Self.Subdivision" Multiplicity="0..1" />
-          <End Role="Tutor" Type="Self.Tutor" Multiplicity="*" />
+          <End Role="Subdivision" Type="Хранилище AudienceModel.Subdivision" Multiplicity="0..1" />
+          <End Role="Tutor" Type="Хранилище AudienceModel.Tutor" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Subdivision">
               <PropertyRef Name="Id" />
@@ -1114,240 +1346,23 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Хранилище AudienceModelContainer">
-          <EntitySet Name="AcademicRank" EntityType="Self.AcademicRank" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Appointment" EntityType="Self.Appointment" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="aspnet_Applications" EntityType="Self.aspnet_Applications" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="aspnet_Membership" EntityType="Self.aspnet_Membership" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="aspnet_Roles" EntityType="Self.aspnet_Roles" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="aspnet_SchemaVersions" EntityType="Self.aspnet_SchemaVersions" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="aspnet_Users" EntityType="Self.aspnet_Users" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="aspnet_UsersInRoles" EntityType="Self.aspnet_UsersInRoles" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Audience" EntityType="Self.Audience" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Beauty" EntityType="Self.Beauty" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Building" EntityType="Self.Building" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="CategoryRole" EntityType="Self.CategoryRole" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Degree" EntityType="Self.Degree" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Discipline" EntityType="Self.Discipline" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Doc" EntityType="Self.Doc" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="DocType" EntityType="Self.DocType" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="EducationForm" EntityType="Self.EducationForm" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="EducationKind" EntityType="Self.EducationKind" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Equipment" EntityType="Self.Equipment" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="EquipmentType" EntityType="Self.EquipmentType" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Estate" EntityType="Self.Estate" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ETime" EntityType="Self.ETime" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="EventType" EntityType="Self.EventType" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Faculty" EntityType="Self.Faculty" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="File" EntityType="Self.File" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="LampType" EntityType="Self.LampType" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Map" EntityType="Self.Map" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ObjectType" EntityType="Self.ObjectType" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Profile" EntityType="Self.Profile" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Repair" EntityType="Self.Repair" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Responsible" EntityType="Self.Responsible" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Section" EntityType="Self.Section" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Sem" EntityType="Self.Sem" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Shedule" EntityType="Self.Shedule" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="SheduleType" EntityType="Self.SheduleType" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="State" EntityType="Self.State" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Statistics" EntityType="Self.Statistics" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Stream" EntityType="Self.Stream" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Subdivision" EntityType="Self.Subdivision" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Subdivision_old" EntityType="Self.Subdivision_old" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Subdivision_old_load" EntityType="Self.Subdivision_old_load" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="SubDivisionDiscipline" EntityType="Self.SubDivisionDiscipline" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="SubGroup" EntityType="Self.SubGroup" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="TimeTable" EntityType="Self.TimeTable" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Tutor" EntityType="Self.Tutor" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Tutor_old" EntityType="Self.Tutor_old" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="WeekDay" EntityType="Self.WeekDay" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__aspnet_Me__Appli__21B6055D" Association="Self.FK__aspnet_Me__Appli__21B6055D">
-            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
-            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
-          </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Me__UserI__22AA2996" Association="Self.FK__aspnet_Me__UserI__22AA2996">
-            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
-            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
-          </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Ro__Appli__38996AB5" Association="Self.FK__aspnet_Ro__Appli__38996AB5">
-            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
-            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
-          </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Us__Appli__0DAF0CB0" Association="Self.FK__aspnet_Us__Appli__0DAF0CB0">
-            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
-            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
-          </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Us__RoleI__3F466844" Association="Self.FK__aspnet_Us__RoleI__3F466844">
-            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
-            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
-          </AssociationSet>
-          <AssociationSet Name="FK__aspnet_Us__UserI__3E52440B" Association="Self.FK__aspnet_Us__UserI__3E52440B">
-            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
-            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Audience_LampType" Association="Self.FK_Audience_LampType">
-            <End Role="LampType" EntitySet="LampType" />
-            <End Role="Audience" EntitySet="Audience" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Audience_Map" Association="Self.FK_Audience_Map">
-            <End Role="Map" EntitySet="Map" />
-            <End Role="Audience" EntitySet="Audience" />
-          </AssociationSet>
-          <AssociationSet Name="FK_AUDIENCE_REF_356_CATEGORY" Association="Self.FK_AUDIENCE_REF_356_CATEGORY">
-            <End Role="Category" EntitySet="Category" />
-            <End Role="Audience" EntitySet="Audience" />
-          </AssociationSet>
-          <AssociationSet Name="FK_AUDIENCE_REF_371_BUILDING" Association="Self.FK_AUDIENCE_REF_371_BUILDING">
-            <End Role="Building" EntitySet="Building" />
-            <End Role="Audience" EntitySet="Audience" />
-          </AssociationSet>
-          <AssociationSet Name="FK_AUDIENCE_REF_377_STATE" Association="Self.FK_AUDIENCE_REF_377_STATE">
-            <End Role="State" EntitySet="State" />
-            <End Role="Audience" EntitySet="Audience" />
-          </AssociationSet>
-          <AssociationSet Name="FK_AUDIENCE_REFERENCE_BEAUTY" Association="Self.FK_AUDIENCE_REFERENCE_BEAUTY">
-            <End Role="Beauty" EntitySet="Beauty" />
-            <End Role="Audience" EntitySet="Audience" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Audience_Responsible" Association="Self.FK_Audience_Responsible">
-            <End Role="Responsible" EntitySet="Responsible" />
-            <End Role="Audience" EntitySet="Audience" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Audience_Subdivision" Association="Self.FK_Audience_Subdivision">
-            <End Role="Subdivision" EntitySet="Subdivision" />
-            <End Role="Audience" EntitySet="Audience" />
-          </AssociationSet>
-          <AssociationSet Name="FK_CategoryRole_aspnet_Roles" Association="Self.FK_CategoryRole_aspnet_Roles">
-            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
-            <End Role="CategoryRole" EntitySet="CategoryRole" />
-          </AssociationSet>
-          <AssociationSet Name="FK_CategoryRole_Category" Association="Self.FK_CategoryRole_Category">
-            <End Role="Category" EntitySet="Category" />
-            <End Role="CategoryRole" EntitySet="CategoryRole" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Doc_Doc" Association="Self.FK_Doc_Doc">
-            <End Role="ObjectType" EntitySet="ObjectType" />
-            <End Role="Doc" EntitySet="Doc" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Doc_DocType" Association="Self.FK_Doc_DocType">
-            <End Role="DocType" EntitySet="DocType" />
-            <End Role="Doc" EntitySet="Doc" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Doc_File" Association="Self.FK_Doc_File">
-            <End Role="File" EntitySet="File" />
-            <End Role="Doc" EntitySet="Doc" />
-          </AssociationSet>
-          <AssociationSet Name="FK_EQUIPMEN_REFERENCE_AUDIENCE" Association="Self.FK_EQUIPMEN_REFERENCE_AUDIENCE">
-            <End Role="Audience" EntitySet="Audience" />
-            <End Role="Equipment" EntitySet="Equipment" />
-          </AssociationSet>
-          <AssociationSet Name="FK_EQUIPMEN_REFERENCE_EQUIPMEN" Association="Self.FK_EQUIPMEN_REFERENCE_EQUIPMEN">
-            <End Role="EquipmentType" EntitySet="EquipmentType" />
-            <End Role="Equipment" EntitySet="Equipment" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Estate_Estate" Association="Self.FK_Estate_Estate">
-            <End Role="Estate" EntitySet="Estate" />
-            <End Role="Estate1" EntitySet="Estate" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Groups_Subdivision" Association="Self.FK_Groups_Subdivision">
-            <End Role="Subdivision" EntitySet="Subdivision" />
-            <End Role="Groups" EntitySet="Groups" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Profile_aspnet_Users" Association="Self.FK_Profile_aspnet_Users">
-            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
-            <End Role="Profile" EntitySet="Profile" />
-          </AssociationSet>
-          <AssociationSet Name="FK_REPAIR_REFERENCE_AUDIENCE" Association="Self.FK_REPAIR_REFERENCE_AUDIENCE">
-            <End Role="Audience" EntitySet="Audience" />
-            <End Role="Repair" EntitySet="Repair" />
-          </AssociationSet>
-          <AssociationSet Name="FK_SHEDULE_REFERENCE_EDUCATIO" Association="Self.FK_SHEDULE_REFERENCE_EDUCATIO">
-            <End Role="EducationForm" EntitySet="EducationForm" />
-            <End Role="Shedule" EntitySet="Shedule" />
-          </AssociationSet>
-          <AssociationSet Name="FK_SHEDULE_REFERENCE_SEM" Association="Self.FK_SHEDULE_REFERENCE_SEM">
-            <End Role="Sem" EntitySet="Sem" />
-            <End Role="Shedule" EntitySet="Shedule" />
-          </AssociationSet>
-          <AssociationSet Name="FK_SHEDULE_REFERENCE_SHEDULET" Association="Self.FK_SHEDULE_REFERENCE_SHEDULET">
-            <End Role="SheduleType" EntitySet="SheduleType" />
-            <End Role="Shedule" EntitySet="Shedule" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Statistics_aspnet_Users" Association="Self.FK_Statistics_aspnet_Users">
-            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
-            <End Role="Statistics" EntitySet="Statistics" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Statistics_EventType" Association="Self.FK_Statistics_EventType">
-            <End Role="EventType" EntitySet="EventType" />
-            <End Role="Statistics" EntitySet="Statistics" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Statistics_Section" Association="Self.FK_Statistics_Section">
-            <End Role="Section" EntitySet="Section" />
-            <End Role="Statistics" EntitySet="Statistics" />
-          </AssociationSet>
-          <AssociationSet Name="FK_SubDivisionDiscipline_Discipline" Association="Self.FK_SubDivisionDiscipline_Discipline">
-            <End Role="Discipline" EntitySet="Discipline" />
-            <End Role="SubDivisionDiscipline" EntitySet="SubDivisionDiscipline" />
-          </AssociationSet>
-          <AssociationSet Name="FK_SubGroup_Groups" Association="Self.FK_SubGroup_Groups">
-            <End Role="Groups" EntitySet="Groups" />
-            <End Role="SubGroup" EntitySet="SubGroup" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TIMETABL_DISCIPLINE" Association="Self.FK_TIMETABL_DISCIPLINE">
-            <End Role="Discipline" EntitySet="Discipline" />
-            <End Role="TimeTable" EntitySet="TimeTable" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TIMETABL_REFERENCE_AUDIENCE" Association="Self.FK_TIMETABL_REFERENCE_AUDIENCE">
-            <End Role="Audience" EntitySet="Audience" />
-            <End Role="TimeTable" EntitySet="TimeTable" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TIMETABL_REFERENCE_EDUCATIO" Association="Self.FK_TIMETABL_REFERENCE_EDUCATIO">
-            <End Role="EducationKind" EntitySet="EducationKind" />
-            <End Role="TimeTable" EntitySet="TimeTable" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TIMETABL_REFERENCE_ETIME" Association="Self.FK_TIMETABL_REFERENCE_ETIME">
-            <End Role="ETime" EntitySet="ETime" />
-            <End Role="TimeTable" EntitySet="TimeTable" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TIMETABL_REFERENCE_SHEDULE" Association="Self.FK_TIMETABL_REFERENCE_SHEDULE">
-            <End Role="Shedule" EntitySet="Shedule" />
-            <End Role="TimeTable" EntitySet="TimeTable" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TIMETABL_REFERENCE_SUBGROUP" Association="Self.FK_TIMETABL_REFERENCE_SUBGROUP">
-            <End Role="SubGroup" EntitySet="SubGroup" />
-            <End Role="TimeTable" EntitySet="TimeTable" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TIMETABL_REFERENCE_TUTOR" Association="Self.FK_TIMETABL_REFERENCE_TUTOR">
-            <End Role="Tutor" EntitySet="Tutor" />
-            <End Role="TimeTable" EntitySet="TimeTable" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TIMETABL_REFERENCE_WEEKDAY" Association="Self.FK_TIMETABL_REFERENCE_WEEKDAY">
-            <End Role="WeekDay" EntitySet="WeekDay" />
-            <End Role="TimeTable" EntitySet="TimeTable" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tutor_new_AcademicRank" Association="Self.FK_Tutor_new_AcademicRank">
-            <End Role="AcademicRank" EntitySet="AcademicRank" />
-            <End Role="Tutor" EntitySet="Tutor" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tutor_new_Appointment" Association="Self.FK_Tutor_new_Appointment">
-            <End Role="Appointment" EntitySet="Appointment" />
-            <End Role="Tutor" EntitySet="Tutor" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tutor_new_Degree" Association="Self.FK_Tutor_new_Degree">
-            <End Role="Degree" EntitySet="Degree" />
-            <End Role="Tutor" EntitySet="Tutor" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Tutor_Subdivision" Association="Self.FK_Tutor_Subdivision">
-            <End Role="Subdivision" EntitySet="Subdivision" />
-            <End Role="Tutor" EntitySet="Tutor" />
-          </AssociationSet>
-        </EntityContainer>
-      </Schema></edmx:StorageModels>
+        <!--Ошибки, обнаруженные при создании:
+      предупреждение 6013: Первичный ключ в таблице или представлении "Audience.dbo.Aud_Excel" не определен, его не удалось вывести. Эта таблица или представление исключена. Чтобы использовать сущность, необходимо проверить схему, добавить правильные ключи и раскомментировать ее.
+      
+      <EntityType Name="Aud_Excel">
+        <Property Name="Corpus" Type="char" MaxLength="10" />
+        <Property Name="Num" Type="nchar" MaxLength="10" />
+        <Property Name="Category" Type="nchar" MaxLength="40" />
+        <Property Name="Sotr" Type="int" />
+        <Property Name="Stud" Type="int" />
+        <Property Name="Comp" Type="int" />
+        <Property Name="K" Type="nchar" MaxLength="3" />
+        <Property Name="Sign" Type="nchar" MaxLength="3" />
+        <Property Name="PodrCode" Type="int" />
+        <Property Name="Note" Type="nchar" MaxLength="300" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AudienceModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -2181,7 +2196,6 @@
           <NavigationProperty Name="Degree" Relationship="AudienceModel.FK_Tutor_new_Degree" FromRole="Tutor" ToRole="Degree" />
           <NavigationProperty Name="Subdivision" Relationship="AudienceModel.FK_Tutor_Subdivision" FromRole="Tutor" ToRole="Subdivision" />
           <NavigationProperty Name="TimeTable" Relationship="AudienceModel.FK_TIMETABL_REFERENCE_TUTOR" FromRole="Tutor" ToRole="TimeTable" />
-          <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Tutor_old">
           <Key>
@@ -3274,7 +3288,6 @@
           <EntitySetMapping Name="Tutor">
             <EntityTypeMapping TypeName="AudienceModel.Tutor">
               <MappingFragment StoreEntitySet="Tutor">
-                <ScalarProperty Name="FullName" ColumnName="FullName" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="SubdivisionId" ColumnName="SubdivisionId" />
@@ -3336,7 +3349,6 @@
         <DesignerProperty Name="EnablePluralization" Value="False" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
-        <DesignerProperty Name="UseLegacyProvider" Value="False" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->

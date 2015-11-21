@@ -1,5 +1,8 @@
-﻿using Core.Domain;
+﻿using Core;
+using Core.Domain;
 using IspuScheduleApi.Models;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace IspuScheduleApi.Factories
 {
@@ -11,8 +14,19 @@ namespace IspuScheduleApi.Factories
         public static UIGroup Init(Group instance)
         {
             var item = new UIGroup();
-            item.Id = instance.Id;
-            item.Name = instance.Name;
+            item.Name = instance.Name.TrimEnd(' ');
+
+            item.Lessons = new List<UILesson>();
+            GroupSchedule sched = DATA.GetSchedule(instance.Id);
+
+            foreach (TrainingDay day in sched.Days)
+            {
+                int weekday = day.WeekDay;
+                foreach (Lesson lesson in day.Lessons)
+                {
+                    item.Lessons.Add(UILessonFactory.Init(lesson, weekday));
+                }
+            }
 
             return item;
         }

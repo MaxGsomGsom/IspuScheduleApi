@@ -46,25 +46,28 @@ namespace Core
         {
             using (var e = new AudienceEntities())
             {
-                //завтрашняя дата, используется, чтобы загружать расписание на день раньше, чем оно начинает действовать
-                DateTime tomorrow = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day + 1);
+                //запас времени 7 дней используется, чтобы загружать расписание на день раньше, чем оно начинает действовать
+                DateTime tomorrow = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day + 7);
                 //список расписаний, период действия которых содержит сегодняшнее число
                 List<Shedule> curSchedules = e.Shedule.Where(el => DateTime.Compare(tomorrow, el.BegDate.Value) >= 0 && DateTime.Compare(DateTime.Now, el.EndDate.Value) <= 0).ToList();
 
-                GroupSchedule groupSched = null;
-                //получаем первое дейтсвующее расписание для группы
-                for (int i = 0; i < curSchedules.Count && groupSched == null; i++)
+                //выбираем только нужные расписания из всех
+                IQueryable<TimeTable> timeTable = e.TimeTable.Where((el) => el.StreamId == idGroup && el.DisciplineId != null);
+                List<TimeTable> timeTableNow = new List<TimeTable>();
+
+                foreach (Shedule item in curSchedules)
                 {
-                    
-                    int curScheduleID = curSchedules[i].Id;
-                    groupSched = GroupSchedule.Generate(e.TimeTable.Where(el => el.StreamId == idGroup && el.DisciplineId != null && el.SheduleId == curScheduleID).ToList());
+                    timeTableNow.AddRange(timeTable.Where(el => el.SheduleId == item.Id));
                 }
 
-                //если расписания нет - возвращаем пустое
-                if (groupSched == null) {
+                GroupSchedule groupSched = GroupSchedule.Generate(timeTableNow);
+
+                //если расписание пустое
+                if (groupSched == null)
                     groupSched = new GroupSchedule();
+                if (groupSched.Days == null)
                     groupSched.Days = new List<TrainingDay>();
-                }
+
                 return groupSched;
             }
         }

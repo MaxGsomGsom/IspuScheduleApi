@@ -76,10 +76,10 @@ namespace Core.Test
             if (!day.Lessons.Any()) return;
 
             foreach (var lesson in day.Lessons)
-                TestLessong(lesson);
+                TestLessons(lesson);
         }
 
-        public void TestLessong(Lesson lesson)
+        public void TestLessons(Lesson lesson)
         {
             Assert.IsFalse(string.IsNullOrEmpty(lesson.Name), "Не указано наименование предмета");
             Assert.IsTrue(lesson.Type >= 0 && lesson.Type < 8, "Неверный тип предмета");
