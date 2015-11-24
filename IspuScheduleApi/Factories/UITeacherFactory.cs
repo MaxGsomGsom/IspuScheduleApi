@@ -5,11 +5,6 @@ namespace IspuScheduleApi.Factories
 {
     public static class UITeacherFactory
     {
-        /// <summary>
-        /// Фабрика для создания UI-модели
-        /// </summary>
-        /// <param name="instance"></param>
-        /// <returns></returns>
         public static UITeacher Init(Teacher instance)
         {
             var item = new UITeacher();

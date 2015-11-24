@@ -46,8 +46,9 @@ namespace Core
         {
             using (var e = new AudienceEntities())
             {
-                //запас времени 7 дней используется, чтобы загружать расписание на день раньше, чем оно начинает действовать
-                DateTime tomorrow = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day + 7);
+                //запас времени 14 дней используется, чтобы загружать расписание на 14 дней раньше, чем оно начинает действовать
+                DateTime tomorrow = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+                tomorrow = tomorrow.AddDays(14);
                 //список расписаний, период действия которых содержит сегодняшнее число
                 List<Shedule> curSchedules = e.Shedule.Where(el => DateTime.Compare(tomorrow, el.BegDate.Value) >= 0 && DateTime.Compare(DateTime.Now, el.EndDate.Value) <= 0).ToList();
 

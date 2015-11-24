@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C0B3F9EE-4875-48B5-80BF-090403EFEB51}</ProjectGuid>
+    <ProjectGuid>{0B10E916-73CC-4973-B989-C6C8B476E840}</ProjectGuid>
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IspuScheduleApi</RootNamespace>
-    <AssemblyName>IspuScheduleApi</AssemblyName>
+    <RootNamespace>IspuScheduleApi2</RootNamespace>
+    <AssemblyName>IspuScheduleApi2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -23,8 +23,10 @@
     <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
-    <UpgradeBackupLocation />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -157,39 +159,41 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ScheduleController.cs" />
     <Compile Include="Factories\UIAuditoryFactory.cs" />
-    <Compile Include="Factories\UIFacultiesFactory.cs" />
     <Compile Include="Factories\UIFacultyFactory.cs" />
     <Compile Include="Factories\UIGroupFactory.cs" />
-    <Compile Include="Factories\UIGroupsFactory.cs" />
-    <Compile Include="Factories\UILesssonFactory.cs" />
+    <Compile Include="Factories\UILessonFactory.cs" />
     <Compile Include="Factories\UIScheduleFactory.cs" />
     <Compile Include="Factories\UITeacherFactory.cs" />
-    <Compile Include="Factories\UITrainingDayFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\UIAuditory.cs" />
-    <Compile Include="Models\UIFaculties.cs" />
+    <Compile Include="Models\UIDate.cs" />
+    <Compile Include="Models\UITime.cs" />
     <Compile Include="Models\UIFaculty.cs" />
     <Compile Include="Models\UIGroup.cs" />
-    <Compile Include="Models\UIGroups.cs" />
     <Compile Include="Models\UILesson.cs" />
     <Compile Include="Models\UISchedule.cs" />
     <Compile Include="Models\UITeacher.cs" />
-    <Compile Include="Models\UITrainingDay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />

@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IspuScheduleApi", "IspuScheduleApi\IspuScheduleApi.csproj", "{C0B3F9EE-4875-48B5-80BF-090403EFEB51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E91D508A-206A-4C71-96DC-60EE080EB329}"
@@ -10,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D4AB078E-60C8-4E33-8A73-F914FCCA13C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Test", "Core.Test\Core.Test.csproj", "{2A7F4233-F39D-40E1-B652-B2D02C838879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IspuScheduleApi2", "IspuScheduleApi2\IspuScheduleApi2.csproj", "{0B10E916-73CC-4973-B989-C6C8B476E840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{2A7F4233-F39D-40E1-B652-B2D02C838879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A7F4233-F39D-40E1-B652-B2D02C838879}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A7F4233-F39D-40E1-B652-B2D02C838879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B10E916-73CC-4973-B989-C6C8B476E840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B10E916-73CC-4973-B989-C6C8B476E840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B10E916-73CC-4973-B989-C6C8B476E840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B10E916-73CC-4973-B989-C6C8B476E840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

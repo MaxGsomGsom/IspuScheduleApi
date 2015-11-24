@@ -7,15 +7,33 @@ namespace IspuScheduleApi.Controllers
 {
     public class ScheduleController : ApiController
     {
-
         /// <summary>
-        /// Получение всего расписания
+        ///     Возвращает список факультетов
         /// </summary>
         /// <returns></returns>
-        public UISchedule get_schedule()
+        public UIFaculties get_faculties()
         {
-            return UIScheduleFactory.Init();
+            return UIFacultiesFactory.Init(DATA.GetFaculties());
         }
 
+        /// <summary>
+        ///     Возвращает список групп по указанному идентификатору факультета
+        /// </summary>
+        /// <param name="faculty_id">Идентификатор факультета</param>
+        /// <returns></returns>
+        public UIGroups get_groups(int faculty_id)
+        {
+            return UIGroupsFactory.Init(DATA.GetGroups(faculty_id));
+        }
+
+        /// <summary>
+        ///     Возвращает рассписание для указаной группы
+        /// </summary>
+        /// <param name="group_id">Идентификатор группы</param>
+        /// <returns></returns>
+        public UISchedule get_schedule(int group_id)
+        {
+            return UIScheduleFactory.Init(DATA.GetSchedule(group_id));
+        }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using Newtonsoft.Json;
-using System.Collections.Generic;
 
 namespace IspuScheduleApi.Models
 {
@@ -9,10 +8,16 @@ namespace IspuScheduleApi.Models
     /// </summary>
     public class UIFaculty
     {
-        [JsonProperty("name")]
+        [JsonProperty("faculty_name", Order = 0)]
         public String Name { get; set; }
 
-        [JsonProperty("groups")]
-        public List<UIGroup> Groups { get; set; }
+        [JsonProperty("faculty_id", Order = 1)]
+        public int? Id { get; set; }
+
+        [JsonProperty("date_start", Order = 2)]
+        public DateTime? Start { get; set; }
+
+        [JsonProperty("date_end", Order = 3)]
+        public DateTime? End { get; set; }
     }
 }

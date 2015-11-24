@@ -1,10 +1,15 @@
 ﻿using Core.Domain;
-using IspuScheduleApi.Models;
+using IspuScheduleApi2.Models;
 
-namespace IspuScheduleApi.Factories
+namespace IspuScheduleApi2.Factories
 {
     public static class UIAuditoryFactory
     {
+        /// <summary>
+        /// Фабрика для создания UI-модели
+        /// </summary>
+        /// <param name="instance"></param>
+        /// <returns></returns>
         public static UIAuditory Init(Auditory instance)
         {
             var item = new UIAuditory();

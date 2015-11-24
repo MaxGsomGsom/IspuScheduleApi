@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System.Collections.Generic;
 
 namespace IspuScheduleApi.Models
 {
@@ -8,10 +7,10 @@ namespace IspuScheduleApi.Models
     /// </summary>
     public class UIGroup
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty(PropertyName = "group_id", Order = 1)]
+        public int Id { get; set; }
 
-        [JsonProperty("lessons")]
-        public List<UILesson> Lessons { get; set; }
+        [JsonProperty(PropertyName = "group_name", Order = 0)]
+        public string Name { get; set; }
     }
 }

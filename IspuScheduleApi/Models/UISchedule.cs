@@ -3,20 +3,18 @@ using Newtonsoft.Json;
 
 namespace IspuScheduleApi.Models
 {
-    /// <summary>
-    /// UI-модель "Расписание"
-    /// </summary>
     public class UISchedule
     {
-
-        [JsonProperty("name")]
+        /// <summary>
+        ///     Имя группы
+        /// </summary>
+        [JsonProperty("group_name")]
         public string Name { get; set; }
 
-
-        [JsonProperty("abbr")]
-        public string Abbr { get; set; }
-
-        [JsonProperty("faculties")]
-        public List<UIFaculty> Faculties { get; set; }
+        /// <summary>
+        ///     Учебные дни
+        /// </summary>
+        [JsonProperty("days")]
+        public List<UITrainingDay> Days { get; set; }
     }
 }
