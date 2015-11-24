@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace IspuScheduleApi2
+namespace IspuScheduleApi
 {
     public class BundleConfig
     {

@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace IspuScheduleApi2
+namespace IspuScheduleApi
 {
     public class RouteConfig
     {

@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace IspuScheduleApi2
+namespace IspuScheduleApi
 {
     // Примечание: Инструкции по включению классического режима IIS6 или IIS7 
     // см. по ссылке http://go.microsoft.com/?LinkId=9394801

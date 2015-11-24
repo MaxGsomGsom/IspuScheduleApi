@@ -1,7 +1,7 @@
 ﻿using Core.Domain;
-using IspuScheduleApi2.Models;
+using IspuScheduleApi.Models;
 
-namespace IspuScheduleApi2.Factories
+namespace IspuScheduleApi.Factories
 {
     /// <summary>
     ///     Фабрика для создания UI-модели "Группа"

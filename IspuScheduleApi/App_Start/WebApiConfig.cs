@@ -1,7 +1,7 @@
 ﻿using System.Net.Http.Headers;
 using System.Web.Http;
 
-namespace IspuScheduleApi2
+namespace IspuScheduleApi
 {
     public static class WebApiConfig
     {
