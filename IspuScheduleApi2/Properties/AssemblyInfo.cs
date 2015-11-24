@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // общие сведения об этой сборке.
 
-[assembly: AssemblyTitle("IspuScheduleApi")]
+[assembly: AssemblyTitle("IspuScheduleApi2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("IspuScheduleApi")]
+[assembly: AssemblyProduct("IspuScheduleApi2")]
 [assembly: AssemblyCopyright("© , 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

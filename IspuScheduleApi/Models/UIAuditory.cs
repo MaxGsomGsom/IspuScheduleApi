@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace IspuScheduleApi.Models
+namespace IspuScheduleApi2.Models
 {
     /// <summary>
     ///     UI-модель  "Аудитория"

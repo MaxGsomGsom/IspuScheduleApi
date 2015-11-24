@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace IspuScheduleApi.Models
+namespace IspuScheduleApi2.Models
 {
     public class UISchedule
     {

@@ -1,9 +1,9 @@
 ﻿using System.Web.Http;
 using Core;
-using IspuScheduleApi.Factories;
-using IspuScheduleApi.Models;
+using IspuScheduleApi2.Factories;
+using IspuScheduleApi2.Models;
 
-namespace IspuScheduleApi.Controllers
+namespace IspuScheduleApi2.Controllers
 {
     public class ScheduleController : ApiController
     {

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace IspuScheduleApi
+namespace IspuScheduleApi2
 {
     public class FilterConfig
     {

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Core.Domain;
-using IspuScheduleApi.Models;
+using IspuScheduleApi2.Models;
 
-namespace IspuScheduleApi.Factories
+namespace IspuScheduleApi2.Factories
 {
     public static class UIFacultiesFactory
     {
