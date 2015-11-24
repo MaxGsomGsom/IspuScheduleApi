@@ -7,7 +7,7 @@ namespace IspuScheduleApi2
     {
         public static void Register(HttpConfiguration config)
         {
-            config.Routes.MapHttpRoute("DefaultApi", "api2/{controller}/{id}", new {id = RouteParameter.Optional}
+            config.Routes.MapHttpRoute("DefaultApi", "{controller}/{id}", new {id = RouteParameter.Optional}
                 );
 
             // Раскомментируйте следующую строку кода, чтобы включить поддержку запросов для действий с типом возвращаемого значения IQueryable или IQueryable<T>.
