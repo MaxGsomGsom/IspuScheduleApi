@@ -148,28 +148,33 @@ namespace Core.Domain
 
                 if (instance.Date.Contains("с"))
                 {
-                    item.DateStart = DateTime.Parse(Regex.Match(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}").Value + "." + DateTime.Now.Year.ToString());
+                    DateTime d = DateTime.Parse(Regex.Match(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}").Value + "." + DateTime.Now.Year.ToString());
+
+                    if (d < DateTime.Now) d = d.AddYears(1);
+
+                    item.DateStart = d;
                 }
                 else 
                 {
                     MatchCollection dates = Regex.Matches(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}");
                     foreach (Match date in dates)
                     {
-                        item.Dates.Add(DateTime.Parse(date.Value + "." + DateTime.Now.Year.ToString()));
+                        DateTime d = DateTime.Parse(date.Value + "." + DateTime.Now.Year.ToString());
+
+                        if (d < DateTime.Now) d = d.AddYears(1);
+
+                        item.Dates.Add(d);
                     }
                 }
             }
 
 
-            //находим 1 сентября этого учебного года
-            DateTime firstSeptember = new DateTime(DateTime.Now.Year, 9, 1);
-            if (DateTime.Now<firstSeptember)
-            {
-                firstSeptember = new DateTime(DateTime.Now.Year -1, 9, 1);
-            }
+            //находим 1 января этого учебного года
+            DateTime yearStart = new DateTime(DateTime.Now.Year, 1, 1);
 
-            //находим номер недели начала занятий в вузовском расписании, нумерация с 1 сентября
-            int numOfWeeks = (int)Math.Ceiling(((instance.Shedule.BegDate.Value - firstSeptember).Days + (int)firstSeptember.DayOfWeek) / 7.0);
+
+            //находим номер недели начала занятий при нумерация с 1 января
+            int numOfWeeks = (int)Math.Ceiling(((instance.Shedule.BegDate.Value - yearStart).Days + (int)yearStart.DayOfWeek) / 7.0);
             
             //если четность недели начала занятий в вузовском расписании и с 1 сентября совпадают, то оставляем четность, иначе меняем недели местами
             if (((numOfWeeks % 2 == 0)? 2 : 1) == instance.Shedule.BegWeekNumber)
@@ -183,12 +188,11 @@ namespace Core.Domain
 
 
             // извлекаем список преподавателей
-            //item.Teachers = instances.Where(el => el.Tutor != null).Select(el => Teacher.Generate(el.Tutor)).ToList();
             item.Teachers = new List<Teacher>();
             if (instance.Tutor != null)
                 item.Teachers.Add(Teacher.Generate(instance.Tutor));
+
             // извлекаем аудитории
-            //item.Auditories = instances.Where(el => el.Audience != null).Select(el => Auditory.Generate(el.Audience)).ToList();
             item.Auditories = new List<Auditory>();
             if (instance.Audience != null)
                 item.Auditories.Add(Auditory.Generate(instance.Audience));

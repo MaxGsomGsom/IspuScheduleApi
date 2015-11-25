@@ -28,12 +28,6 @@ namespace IspuScheduleApi2.Models
         public UITime Time { get; set; }
 
         /// <summary>
-        ///     Даты
-        /// </summary>
-        //[JsonProperty("date")]
-        //public UIDate DatePeriodic { get; set; }
-
-        /// <summary>
         ///     Отдельные даты занятий
         /// </summary>
         [JsonProperty("date")]

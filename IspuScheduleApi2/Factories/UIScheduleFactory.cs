@@ -14,7 +14,7 @@ namespace IspuScheduleApi2.Factories
         {
             var item = new UISchedule();
 
-            item.Name = "Ивановский Государственный Энергетический Университет";
+            item.Name = "Ивановский Государственный Энергетический Университет им. В.И. Ленина";
             item.Abbr = "ИГЭУ";
             item.Faculties = DATA.GetFaculties().Select(UIFacultyFactory.Init).ToList();
 
