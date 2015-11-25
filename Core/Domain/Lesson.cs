@@ -143,20 +143,20 @@ namespace Core.Domain
 
             //устанавливаем даты проведения занятий - однократные или периодические
             item.Dates = new List<DateTime>();
-            if (instance.Date != null && Regex.IsMatch(instance.Date, "\\d\\d\\.\\d\\d"))
+            if (instance.Date != null && Regex.IsMatch(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}"))
             {
 
-                if (instance.Date.Length == 5)
+                if (instance.Date.Contains("с"))
                 {
-                    item.Dates.Add(DateTime.Parse(instance.Date + "." + DateTime.Now.Year.ToString()));
+                    item.DateStart = DateTime.Parse(Regex.Match(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}").Value + "." + DateTime.Now.Year.ToString());
                 }
-                else if (instance.Date.Length > 5 && instance.Date.Contains("с"))
+                else 
                 {
-                    item.DateStart = DateTime.Parse(Regex.Match(instance.Date, "\\d\\d\\.\\d\\d").Value + "." + DateTime.Now.Year.ToString());
-                }
-                else
-                {
-                    throw new NotImplementedException();
+                    MatchCollection dates = Regex.Matches(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}");
+                    foreach (Match date in dates)
+                    {
+                        item.Dates.Add(DateTime.Parse(date.Value + "." + DateTime.Now.Year.ToString()));
+                    }
                 }
             }
 

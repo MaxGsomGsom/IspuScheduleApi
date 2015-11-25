@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Core.Domain;
 using IspuScheduleApi2.Models;
+using System;
 
 namespace IspuScheduleApi2.Factories
 {
@@ -26,7 +27,13 @@ namespace IspuScheduleApi2.Factories
 
             if (instance.Dates.Count > 0)
             {
-                item.Date = instance.Dates.First().ToShortDateString();
+                string result = "";
+                foreach (DateTime date in instance.Dates)
+                {
+                    result += date.ToShortDateString() + ", ";
+                }
+                result = result.Trim(new char[] {' ', ','});
+                item.Date = result;
             }
             else
             {
