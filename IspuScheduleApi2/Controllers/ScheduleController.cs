@@ -24,40 +24,52 @@ namespace IspuScheduleApi2.Controllers
             string truePass = ConfigurationManager.AppSettings["password"].ToString();
             if (truePass == password)
             {
-                string postData = "format=json";
-                postData += "&token=" + ConfigurationManager.AppSettings["token"].ToString();
-                postData += "&report=" + ConfigurationManager.AppSettings["email"].ToString();
-                postData += "&data=" + JsonConvert.SerializeObject(UIScheduleFactory.Init());
+
+
+                //генерируем разделитель
+                byte[] boundaryBytes = new byte[10];
+                (new Random()).NextBytes(boundaryBytes);
+                string boundary = "--"+BitConverter.ToString(boundaryBytes);
+
+                //тело запроса
+                string postData = "\r\n--" + boundary + "\r\nContent-Disposition: form-data; name=\"token\"\r\n\r\n" + ConfigurationManager.AppSettings["token"].ToString()+"\r\n";
+                postData += "--" + boundary + "\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\njson\r\n";
+                postData += "--" + boundary + "\r\nContent-Disposition: form-data; name=\"report\"\r\n\r\n" + ConfigurationManager.AppSettings["email"].ToString() + "\r\n";
+                postData += "--" + boundary + "\r\nContent-Disposition: form-data; name=\"datafile\"; filename=\"ispu_schedule.json\"\r\nContent-Type: text/json\r\n\r\n" + JsonConvert.SerializeObject(UIScheduleFactory.Init()) + "\r\n";
+                postData += "--" + boundary + "--\r\n";
 
                 byte[] postBytes = GetBytes(postData);
 
-                HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://api.rvuzov.ru/2/import");
-                req.ContentType = "application/x-www-form-urlencoded";
+                //заголовки запроса
+                HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://api.rvuzov.ru/v2/import/file");
+                req.ContentType = "multipart/form-data; boundary=" + boundary;
                 req.Method = "POST";
 
 
+                //записываем тело в запрос
                 Stream postStream = req.GetRequestStream();
                 postStream.Write(postBytes, 0, postBytes.Length);
                 postStream.Flush();
                 postStream.Close();
 
 
+                //получаем ответ, при ошибке выводим текст исключения, при успехе - текст ответа
                 try
                 {
                     HttpWebResponse res = (HttpWebResponse)req.GetResponse();
-                    //string s = (new StreamReader(res.GetResponseStream())).ReadToEnd();
+                    string result = (new StreamReader(res.GetResponseStream())).ReadToEnd();
 
                     if (res != null)
-                        return "success";
+                        return result;
                 }
                 catch (Exception e)
                 {
                     return e.Message;
                 }
 
-                return "error";
+                return "Error";
             }
-            return "wrong password";
+            return "Wrong password";
         }
 
 
