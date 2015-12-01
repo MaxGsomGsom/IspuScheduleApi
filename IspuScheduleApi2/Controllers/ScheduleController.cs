@@ -9,6 +9,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 using System;
+using System.Text;
 
 namespace IspuScheduleApi2.Controllers
 {
@@ -25,20 +26,21 @@ namespace IspuScheduleApi2.Controllers
             if (truePass == password)
             {
 
-
                 //генерируем разделитель
                 byte[] boundaryBytes = new byte[10];
                 (new Random()).NextBytes(boundaryBytes);
-                string boundary = "--"+BitConverter.ToString(boundaryBytes);
+                string boundary = "--" + BitConverter.ToString(boundaryBytes);
 
                 //тело запроса
-                string postData = "\r\n--" + boundary + "\r\nContent-Disposition: form-data; name=\"token\"\r\n\r\n" + ConfigurationManager.AppSettings["token"].ToString()+"\r\n";
+                string postData = "\r\n--" + boundary + "\r\nContent-Disposition: form-data; name=\"token\"\r\n\r\n" + ConfigurationManager.AppSettings["token"].ToString() + "\r\n";
                 postData += "--" + boundary + "\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\njson\r\n";
                 postData += "--" + boundary + "\r\nContent-Disposition: form-data; name=\"report\"\r\n\r\n" + ConfigurationManager.AppSettings["email"].ToString() + "\r\n";
                 postData += "--" + boundary + "\r\nContent-Disposition: form-data; name=\"datafile\"; filename=\"ispu_schedule.json\"\r\nContent-Type: text/json\r\n\r\n" + JsonConvert.SerializeObject(UIScheduleFactory.Init()) + "\r\n";
                 postData += "--" + boundary + "--\r\n";
 
                 byte[] postBytes = GetBytes(postData);
+
+                postBytes = Encoding.Convert(Encoding.Unicode, Encoding.UTF8, postBytes);
 
                 //заголовки запроса
                 HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://api.rvuzov.ru/v2/import/file");
@@ -62,18 +64,21 @@ namespace IspuScheduleApi2.Controllers
                     if (res != null)
                         return result;
                 }
-                catch (Exception e)
+                catch (WebException e)
                 {
-                    return e.Message;
+                    string result = (new StreamReader(e.Response.GetResponseStream())).ReadToEnd();
+                    return result;
                 }
 
                 return "Error";
             }
             return "Wrong password";
+
         }
 
 
-        
+
+
         /// <summary>
         /// Вывод расписания по запросу (для тестирования)
         /// </summary>
