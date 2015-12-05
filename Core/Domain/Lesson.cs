@@ -148,9 +148,9 @@ namespace Core.Domain
 
                 if (instance.Date.Contains("с"))
                 {
-                    DateTime d = DateTime.Parse(Regex.Match(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}").Value + "." + DateTime.Now.Year.ToString());
+                    DateTime d = DateTime.Parse(Regex.Match(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}").Value + "." + item.DateStart.Value.Year.ToString());
 
-                    if (d < DateTime.Now) d = d.AddYears(1);
+                    if (d < item.DateStart) d = d.AddYears(1);
 
                     item.DateStart = d;
                 }
@@ -159,9 +159,9 @@ namespace Core.Domain
                     MatchCollection dates = Regex.Matches(instance.Date, "[0-9]{1,2}\\.[0-9]{1,2}");
                     foreach (Match date in dates)
                     {
-                        DateTime d = DateTime.Parse(date.Value + "." + DateTime.Now.Year.ToString());
+                        DateTime d = DateTime.Parse(date.Value + "." + item.DateStart.Value.Year.ToString());
 
-                        if (d < DateTime.Now) d = d.AddYears(1);
+                        if (d < item.DateStart) d = d.AddYears(1);
 
                         item.Dates.Add(d);
                     }
