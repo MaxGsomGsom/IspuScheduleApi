@@ -12,5 +12,8 @@ namespace IspuScheduleApi2.Models
 
         [JsonProperty("addr")]
         public string Address { get; set; }
+
+        [JsonProperty("lonlat")]
+        public string LonLat { get; set; }
     }
 }

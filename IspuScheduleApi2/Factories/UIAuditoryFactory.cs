@@ -16,6 +16,7 @@ namespace IspuScheduleApi2.Factories
 
             item.Name = instance.Name;
             item.Address = instance.Address;
+            item.LonLat = instance.LonLat;
 
             return item;
         }
